@@ -1,0 +1,353 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading cuda 11.8 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 10.2.0 
+Lmod: loading openmpi 4.1.2 
+
+The following have been reloaded with a version change:
+  1) gcc/8.5.0 => gcc/10.2.0
+
+Thu Dec  5 22:41:42 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:07:00.0 Off |                    0 |
+| N/A   29C    P0             55W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+device: cuda
+MAMCA Model parameters number: 597234
+  0%|          | 0/150 [00:00<?, ?it/s]  1%|          | 1/150 [00:06<15:00,  6.04s/it]  1%|▏         | 2/150 [00:11<14:22,  5.83s/it]  2%|▏         | 3/150 [00:17<14:04,  5.74s/it]  3%|▎         | 4/150 [00:23<13:54,  5.72s/it]  3%|▎         | 5/150 [00:30<15:14,  6.30s/it]  4%|▍         | 6/150 [00:36<14:37,  6.09s/it]  5%|▍         | 7/150 [00:41<14:09,  5.94s/it]  5%|▌         | 8/150 [00:47<13:51,  5.85s/it]  6%|▌         | 9/150 [00:54<14:25,  6.14s/it]  7%|▋         | 10/150 [01:00<14:19,  6.14s/it]  7%|▋         | 11/150 [01:11<17:56,  7.75s/it]  8%|▊         | 12/150 [01:17<16:30,  7.17s/it]  9%|▊         | 13/150 [01:23<15:21,  6.72s/it]  9%|▉         | 14/150 [01:28<14:32,  6.42s/it] 10%|█         | 15/150 [01:34<14:08,  6.29s/it] 11%|█         | 16/150 [01:40<13:37,  6.10s/it] 11%|█▏        | 17/150 [01:46<13:15,  5.98s/it] 12%|█▏        | 18/150 [01:52<13:01,  5.92s/it] 13%|█▎        | 19/150 [01:57<12:47,  5.86s/it] 13%|█▎        | 20/150 [02:03<12:34,  5.80s/it] 14%|█▍        | 21/150 [02:09<12:24,  5.77s/it] 15%|█▍        | 22/150 [02:14<12:13,  5.73s/it] 15%|█▌        | 23/150 [02:20<12:06,  5.72s/it] 16%|█▌        | 24/150 [02:26<12:00,  5.72s/it] 17%|█▋        | 25/150 [02:31<11:51,  5.69s/it] 17%|█▋        | 26/150 [02:37<11:43,  5.68s/it] 18%|█▊        | 27/150 [02:43<11:38,  5.68s/it] 19%|█▊        | 28/150 [02:48<11:35,  5.70s/it] 19%|█▉        | 29/150 [02:54<11:27,  5.69s/it] 20%|██        | 30/150 [03:00<11:22,  5.69s/it] 21%|██        | 31/150 [03:05<11:19,  5.71s/it] 21%|██▏       | 32/150 [03:11<11:12,  5.70s/it] 22%|██▏       | 33/150 [03:17<11:06,  5.69s/it] 23%|██▎       | 34/150 [03:23<10:58,  5.68s/it] 23%|██▎       | 35/150 [03:28<10:52,  5.67s/it] 24%|██▍       | 36/150 [03:34<10:45,  5.66s/it] 25%|██▍       | 37/150 [03:39<10:39,  5.66s/it] 25%|██▌       | 38/150 [03:45<10:32,  5.65s/it] 26%|██▌       | 39/150 [03:51<10:27,  5.65s/it] 27%|██▋       | 40/150 [03:56<10:22,  5.66s/it] 27%|██▋       | 41/150 [04:02<10:17,  5.66s/it] 28%|██▊       | 42/150 [04:08<10:12,  5.67s/it] 29%|██▊       | 43/150 [04:13<10:06,  5.67s/it] 29%|██▉       | 44/150 [04:19<09:58,  5.65s/it] 30%|███       | 45/150 [04:25<09:51,  5.64s/it] 31%|███       | 46/150 [04:30<09:45,  5.63s/it] 31%|███▏      | 47/150 [04:36<09:39,  5.62s/it] 32%|███▏      | 48/150 [04:42<09:35,  5.64s/it] 33%|███▎      | 49/150 [04:55<13:24,  7.96s/it] 33%|███▎      | 50/150 [05:01<12:08,  7.28s/it] 34%|███▍      | 51/150 [05:12<13:58,  8.47s/it] 35%|███▍      | 52/150 [05:24<15:24,  9.44s/it] 35%|███▌      | 53/150 [05:29<13:26,  8.32s/it] 36%|███▌      | 54/150 [05:35<12:00,  7.51s/it] 37%|███▋      | 55/150 [05:41<10:59,  6.95s/it] 37%|███▋      | 56/150 [05:46<10:18,  6.57s/it] 38%|███▊      | 57/150 [05:52<09:47,  6.31s/it] 39%|███▊      | 58/150 [05:58<09:25,  6.14s/it] 39%|███▉      | 59/150 [06:03<09:05,  6.00s/it] 40%|████      | 60/150 [06:09<08:50,  5.89s/it] 41%|████      | 61/150 [06:15<08:38,  5.82s/it] 41%|████▏     | 62/150 [06:20<08:26,  5.76s/it] 42%|████▏     | 63/150 [06:26<08:17,  5.71s/it] 43%|████▎     | 64/150 [06:31<08:08,  5.68s/it] 43%|████▎     | 65/150 [06:37<08:01,  5.66s/it] 44%|████▍     | 66/150 [06:43<07:54,  5.65s/it] 45%|████▍     | 67/150 [06:48<07:46,  5.62s/it] 45%|████▌     | 68/150 [06:54<07:40,  5.62s/it] 46%|████▌     | 69/150 [07:00<07:36,  5.63s/it] 47%|████▋     | 70/150 [07:05<07:32,  5.66s/it] 47%|████▋     | 71/150 [07:11<07:27,  5.66s/it] 48%|████▊     | 72/150 [07:16<07:19,  5.64s/it] 49%|████▊     | 73/150 [07:22<07:14,  5.65s/it] 49%|████▉     | 74/150 [07:28<07:08,  5.64s/it] 50%|█████     | 75/150 [07:33<07:02,  5.63s/it] 51%|█████     | 76/150 [07:39<06:56,  5.63s/it] 51%|█████▏    | 77/150 [07:45<06:50,  5.62s/it] 52%|█████▏    | 78/150 [07:50<06:45,  5.64s/it] 53%|█████▎    | 79/150 [07:56<06:42,  5.67s/it] 53%|█████▎    | 80/150 [08:02<06:35,  5.65s/it] 54%|█████▍    | 81/150 [08:07<06:29,  5.64s/it] 55%|█████▍    | 82/150 [08:13<06:24,  5.65s/it] 55%|█████▌    | 83/150 [08:19<06:19,  5.66s/it] 56%|█████▌    | 84/150 [08:24<06:13,  5.66s/it] 57%|█████▋    | 85/150 [08:30<06:08,  5.67s/it] 57%|█████▋    | 86/150 [08:36<06:02,  5.66s/it] 58%|█████▊    | 87/150 [08:41<05:57,  5.67s/it] 59%|█████▊    | 88/150 [08:53<07:46,  7.53s/it] 59%|█████▉    | 89/150 [08:59<07:05,  6.97s/it] 60%|██████    | 90/150 [09:04<06:33,  6.56s/it] 61%|██████    | 91/150 [09:10<06:11,  6.29s/it] 61%|██████▏   | 92/150 [09:16<05:54,  6.11s/it] 62%|██████▏   | 93/150 [09:21<05:40,  5.98s/it] 63%|██████▎   | 94/150 [09:27<05:28,  5.87s/it] 63%|██████▎   | 95/150 [09:33<05:18,  5.79s/it] 64%|██████▍   | 96/150 [09:39<05:25,  6.02s/it] 65%|██████▍   | 97/150 [09:52<06:58,  7.89s/it] 65%|██████▌   | 98/150 [09:57<06:15,  7.23s/it] 66%|██████▌   | 99/150 [10:19<09:49, 11.56s/it] 67%|██████▋   | 100/150 [10:24<08:09,  9.78s/it] 67%|██████▋   | 101/150 [10:30<06:59,  8.55s/it] 68%|██████▊   | 102/150 [10:36<06:08,  7.68s/it] 69%|██████▊   | 103/150 [10:41<05:32,  7.07s/it] 69%|██████▉   | 104/150 [10:47<05:05,  6.64s/it] 70%|███████   | 105/150 [10:53<04:45,  6.35s/it] 71%|███████   | 106/150 [10:58<04:29,  6.13s/it] 71%|███████▏  | 107/150 [11:04<04:17,  5.99s/it] 72%|███████▏  | 108/150 [11:10<04:07,  5.89s/it] 73%|███████▎  | 109/150 [11:15<03:58,  5.81s/it] 73%|███████▎  | 110/150 [11:21<03:50,  5.75s/it] 74%|███████▍  | 111/150 [11:27<03:42,  5.71s/it] 75%|███████▍  | 112/150 [11:33<03:40,  5.80s/it] 75%|███████▌  | 113/150 [11:38<03:32,  5.75s/it] 76%|███████▌  | 114/150 [11:44<03:25,  5.72s/it] 77%|███████▋  | 115/150 [11:49<03:18,  5.68s/it] 77%|███████▋  | 116/150 [11:55<03:12,  5.66s/it] 78%|███████▊  | 117/150 [12:01<03:06,  5.65s/it] 79%|███████▊  | 118/150 [12:06<03:00,  5.64s/it] 79%|███████▉  | 119/150 [12:12<02:55,  5.65s/it] 80%|████████  | 120/150 [12:18<02:49,  5.66s/it] 81%|████████  | 121/150 [12:23<02:44,  5.66s/it] 81%|████████▏ | 122/150 [12:29<02:38,  5.65s/it] 82%|████████▏ | 123/150 [12:35<02:32,  5.64s/it] 83%|████████▎ | 124/150 [12:40<02:26,  5.63s/it] 83%|████████▎ | 125/150 [12:46<02:20,  5.61s/it] 84%|████████▍ | 126/150 [12:51<02:15,  5.63s/it] 85%|████████▍ | 127/150 [12:57<02:09,  5.62s/it] 85%|████████▌ | 128/150 [13:03<02:04,  5.64s/it] 86%|████████▌ | 129/150 [13:08<01:58,  5.66s/it] 87%|████████▋ | 130/150 [13:14<01:53,  5.69s/it] 87%|████████▋ | 131/150 [13:20<01:47,  5.67s/it] 88%|████████▊ | 132/150 [13:25<01:41,  5.67s/it] 89%|████████▊ | 133/150 [13:31<01:36,  5.66s/it] 89%|████████▉ | 134/150 [13:37<01:30,  5.65s/it] 90%|█████████ | 135/150 [13:42<01:24,  5.64s/it] 91%|█████████ | 136/150 [13:48<01:18,  5.63s/it] 91%|█████████▏| 137/150 [13:54<01:13,  5.64s/it] 92%|█████████▏| 138/150 [13:59<01:07,  5.62s/it] 93%|█████████▎| 139/150 [14:05<01:01,  5.62s/it] 93%|█████████▎| 140/150 [14:10<00:56,  5.61s/it] 94%|█████████▍| 141/150 [14:16<00:50,  5.63s/it] 95%|█████████▍| 142/150 [14:22<00:45,  5.63s/it] 95%|█████████▌| 143/150 [14:27<00:39,  5.64s/it] 96%|█████████▌| 144/150 [14:33<00:33,  5.63s/it] 97%|█████████▋| 145/150 [14:39<00:28,  5.62s/it] 97%|█████████▋| 146/150 [14:44<00:22,  5.62s/it] 98%|█████████▊| 147/150 [14:50<00:16,  5.62s/it] 99%|█████████▊| 148/150 [14:55<00:11,  5.61s/it] 99%|█████████▉| 149/150 [15:01<00:05,  5.63s/it]100%|██████████| 150/150 [15:07<00:00,  5.62s/it]100%|██████████| 150/150 [15:07<00:00,  6.05s/it]
+Epoch 0 | Loss: 0.7051 | Accuracy: 0.5895 | F1: 0.6963 | Train Time: 5.7249 seconds
+Epoch 0 | Val Loss: 0.6855 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 1 | Loss: 0.6639 | Accuracy: 0.6489 | F1: 0.7817 | Train Time: 5.4069 seconds
+Epoch 1 | Val Loss: 0.6789 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 2 | Loss: 0.6687 | Accuracy: 0.6496 | F1: 0.7853 | Train Time: 5.3745 seconds
+Epoch 2 | Val Loss: 0.6654 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 3 | Loss: 0.6668 | Accuracy: 0.6456 | F1: 0.7820 | Train Time: 5.4090 seconds
+Epoch 3 | Val Loss: 0.6973 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 4 | Loss: 0.6664 | Accuracy: 0.6489 | F1: 0.7844 | Train Time: 7.0740 seconds
+Epoch 4 | Val Loss: 0.6799 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 5 | Loss: 0.6616 | Accuracy: 0.6456 | F1: 0.7812 | Train Time: 5.4052 seconds
+Epoch 5 | Val Loss: 0.6976 | Val Accuracy: 0.6170 | Val F1: 0.7631
+Epoch 6 | Loss: 0.6594 | Accuracy: 0.6477 | F1: 0.7830 | Train Time: 5.3556 seconds
+Epoch 6 | Val Loss: 0.6739 | Val Accuracy: 0.6309 | Val F1: 0.7737
+Epoch 7 | Loss: 0.6554 | Accuracy: 0.6498 | F1: 0.7859 | Train Time: 5.2395 seconds
+Epoch 7 | Val Loss: 0.6866 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 8 | Loss: 0.6501 | Accuracy: 0.6516 | F1: 0.7857 | Train Time: 5.4009 seconds
+Epoch 8 | Val Loss: 0.6604 | Val Accuracy: 0.6316 | Val F1: 0.7742
+Epoch 9 | Loss: 0.6476 | Accuracy: 0.6463 | F1: 0.7752 | Train Time: 5.7023 seconds
+Epoch 9 | Val Loss: 0.6703 | Val Accuracy: 0.5948 | Val F1: 0.7261
+Epoch 10 | Loss: 0.6457 | Accuracy: 0.6547 | F1: 0.7877 | Train Time: 8.4069 seconds
+Epoch 10 | Val Loss: 0.6621 | Val Accuracy: 0.6335 | Val F1: 0.7744
+Epoch 11 | Loss: 0.6355 | Accuracy: 0.6593 | F1: 0.7846 | Train Time: 5.4178 seconds
+Epoch 11 | Val Loss: 0.6803 | Val Accuracy: 0.6620 | Val F1: 0.7848
+Epoch 12 | Loss: 0.6240 | Accuracy: 0.6724 | F1: 0.7825 | Train Time: 5.4106 seconds
+Epoch 12 | Val Loss: 0.6932 | Val Accuracy: 0.6088 | Val F1: 0.7404
+Epoch 13 | Loss: 0.6113 | Accuracy: 0.6868 | F1: 0.7925 | Train Time: 5.4343 seconds
+Epoch 13 | Val Loss: 0.8423 | Val Accuracy: 0.6284 | Val F1: 0.7656
+Epoch 14 | Loss: 0.6040 | Accuracy: 0.6950 | F1: 0.7910 | Train Time: 5.3378 seconds
+Epoch 14 | Val Loss: 0.6414 | Val Accuracy: 0.6728 | Val F1: 0.7868
+Epoch 15 | Loss: 0.5888 | Accuracy: 0.7199 | F1: 0.8151 | Train Time: 5.3857 seconds
+Epoch 15 | Val Loss: 0.7662 | Val Accuracy: 0.6024 | Val F1: 0.7421
+Epoch 16 | Loss: 0.5648 | Accuracy: 0.7352 | F1: 0.8193 | Train Time: 5.3670 seconds
+Epoch 16 | Val Loss: 0.5782 | Val Accuracy: 0.7096 | Val F1: 0.7929
+Epoch 17 | Loss: 0.5504 | Accuracy: 0.7452 | F1: 0.8223 | Train Time: 5.3756 seconds
+Epoch 17 | Val Loss: 0.5979 | Val Accuracy: 0.7254 | Val F1: 0.8136
+Epoch 18 | Loss: 0.5304 | Accuracy: 0.7749 | F1: 0.8420 | Train Time: 5.4061 seconds
+Epoch 18 | Val Loss: 0.5125 | Val Accuracy: 0.7888 | Val F1: 0.8448
+Epoch 19 | Loss: 0.5258 | Accuracy: 0.7715 | F1: 0.8394 | Train Time: 5.4035 seconds
+Epoch 19 | Val Loss: 0.5224 | Val Accuracy: 0.7692 | Val F1: 0.8368
+Epoch 20 | Loss: 0.5040 | Accuracy: 0.7905 | F1: 0.8510 | Train Time: 5.4303 seconds
+Epoch 20 | Val Loss: 0.6074 | Val Accuracy: 0.7781 | Val F1: 0.8446
+Epoch 21 | Loss: 0.5066 | Accuracy: 0.7829 | F1: 0.8472 | Train Time: 5.3530 seconds
+Epoch 21 | Val Loss: 0.5814 | Val Accuracy: 0.7628 | Val F1: 0.8305
+Epoch 22 | Loss: 0.4949 | Accuracy: 0.8011 | F1: 0.8580 | Train Time: 5.3984 seconds
+Epoch 22 | Val Loss: 0.4477 | Val Accuracy: 0.8313 | Val F1: 0.8609
+Epoch 23 | Loss: 0.5002 | Accuracy: 0.7960 | F1: 0.8586 | Train Time: 5.4350 seconds
+Epoch 23 | Val Loss: 0.5402 | Val Accuracy: 0.7857 | Val F1: 0.8450
+Epoch 24 | Loss: 0.4872 | Accuracy: 0.8020 | F1: 0.8598 | Train Time: 5.3691 seconds
+Epoch 24 | Val Loss: 0.4661 | Val Accuracy: 0.8307 | Val F1: 0.8748
+Epoch 25 | Loss: 0.4757 | Accuracy: 0.8121 | F1: 0.8663 | Train Time: 5.3390 seconds
+Epoch 25 | Val Loss: 0.4258 | Val Accuracy: 0.8523 | Val F1: 0.8855
+Epoch 26 | Loss: 0.4628 | Accuracy: 0.8235 | F1: 0.8739 | Train Time: 5.4241 seconds
+Epoch 26 | Val Loss: 0.4563 | Val Accuracy: 0.8263 | Val F1: 0.8762
+Epoch 27 | Loss: 0.4610 | Accuracy: 0.8264 | F1: 0.8758 | Train Time: 5.4200 seconds
+Epoch 27 | Val Loss: 0.4109 | Val Accuracy: 0.8694 | Val F1: 0.8938
+Epoch 28 | Loss: 0.4528 | Accuracy: 0.8374 | F1: 0.8812 | Train Time: 5.3822 seconds
+Epoch 28 | Val Loss: 0.4483 | Val Accuracy: 0.8542 | Val F1: 0.8935
+Epoch 29 | Loss: 0.4575 | Accuracy: 0.8249 | F1: 0.8722 | Train Time: 5.4332 seconds
+Epoch 29 | Val Loss: 0.4792 | Val Accuracy: 0.8573 | Val F1: 0.8935
+Epoch 30 | Loss: 0.4477 | Accuracy: 0.8385 | F1: 0.8832 | Train Time: 5.4078 seconds
+Epoch 30 | Val Loss: 0.4487 | Val Accuracy: 0.8713 | Val F1: 0.9025
+Epoch 31 | Loss: 0.4370 | Accuracy: 0.8482 | F1: 0.8886 | Train Time: 5.3806 seconds
+Epoch 31 | Val Loss: 0.3864 | Val Accuracy: 0.8922 | Val F1: 0.9177
+Epoch 32 | Loss: 0.4366 | Accuracy: 0.8400 | F1: 0.8846 | Train Time: 5.4081 seconds
+Epoch 32 | Val Loss: 0.4088 | Val Accuracy: 0.8668 | Val F1: 0.8966
+Epoch 33 | Loss: 0.4331 | Accuracy: 0.8474 | F1: 0.8898 | Train Time: 5.3775 seconds
+Epoch 33 | Val Loss: 0.4499 | Val Accuracy: 0.8446 | Val F1: 0.8878
+Epoch 34 | Loss: 0.4206 | Accuracy: 0.8654 | F1: 0.9010 | Train Time: 5.3450 seconds
+Epoch 34 | Val Loss: 0.3666 | Val Accuracy: 0.8985 | Val F1: 0.9214
+Epoch 35 | Loss: 0.4360 | Accuracy: 0.8489 | F1: 0.8910 | Train Time: 5.3767 seconds
+Epoch 35 | Val Loss: 0.4987 | Val Accuracy: 0.8167 | Val F1: 0.8705
+Epoch 36 | Loss: 0.4203 | Accuracy: 0.8601 | F1: 0.8989 | Train Time: 5.3776 seconds
+Epoch 36 | Val Loss: 0.3617 | Val Accuracy: 0.8947 | Val F1: 0.9188
+Epoch 37 | Loss: 0.4312 | Accuracy: 0.8446 | F1: 0.8895 | Train Time: 5.3479 seconds
+Epoch 37 | Val Loss: 0.4491 | Val Accuracy: 0.8383 | Val F1: 0.8808
+Epoch 38 | Loss: 0.4193 | Accuracy: 0.8631 | F1: 0.9005 | Train Time: 5.4062 seconds
+Epoch 38 | Val Loss: 0.4484 | Val Accuracy: 0.8529 | Val F1: 0.8929
+Epoch 39 | Loss: 0.4156 | Accuracy: 0.8635 | F1: 0.9006 | Train Time: 5.4064 seconds
+Epoch 39 | Val Loss: 0.4720 | Val Accuracy: 0.8389 | Val F1: 0.8840
+Epoch 40 | Loss: 0.4094 | Accuracy: 0.8750 | F1: 0.9073 | Train Time: 5.4038 seconds
+Epoch 40 | Val Loss: 0.3960 | Val Accuracy: 0.8827 | Val F1: 0.9088
+Epoch 41 | Loss: 0.4069 | Accuracy: 0.8744 | F1: 0.9078 | Train Time: 5.4024 seconds
+Epoch 41 | Val Loss: 0.4080 | Val Accuracy: 0.8681 | Val F1: 0.9011
+Epoch 42 | Loss: 0.4146 | Accuracy: 0.8594 | F1: 0.8976 | Train Time: 5.4021 seconds
+Epoch 42 | Val Loss: 0.4295 | Val Accuracy: 0.8649 | Val F1: 0.9005
+Epoch 43 | Loss: 0.4019 | Accuracy: 0.8786 | F1: 0.9108 | Train Time: 5.3394 seconds
+Epoch 43 | Val Loss: 0.4275 | Val Accuracy: 0.8624 | Val F1: 0.8995
+Epoch 44 | Loss: 0.4022 | Accuracy: 0.8751 | F1: 0.9078 | Train Time: 5.3385 seconds
+Epoch 44 | Val Loss: 0.3912 | Val Accuracy: 0.8878 | Val F1: 0.9099
+Epoch 45 | Loss: 0.3998 | Accuracy: 0.8774 | F1: 0.9098 | Train Time: 5.3381 seconds
+Epoch 45 | Val Loss: 0.3823 | Val Accuracy: 0.8954 | Val F1: 0.9192
+Epoch 46 | Loss: 0.3957 | Accuracy: 0.8855 | F1: 0.9159 | Train Time: 5.3463 seconds
+Epoch 46 | Val Loss: 0.4159 | Val Accuracy: 0.8719 | Val F1: 0.9062
+Epoch 47 | Loss: 0.3993 | Accuracy: 0.8744 | F1: 0.9086 | Train Time: 5.4064 seconds
+Epoch 47 | Val Loss: 0.4248 | Val Accuracy: 0.8713 | Val F1: 0.9056
+Epoch 48 | Loss: 0.3916 | Accuracy: 0.8890 | F1: 0.9179 | Train Time: 5.4099 seconds
+Epoch 48 | Val Loss: 0.3527 | Val Accuracy: 0.9049 | Val F1: 0.9259
+Epoch 49 | Loss: 0.3963 | Accuracy: 0.8774 | F1: 0.9099 | Train Time: 5.4315 seconds
+Epoch 49 | Val Loss: 0.4020 | Val Accuracy: 0.8840 | Val F1: 0.9140
+Epoch 50 | Loss: 0.4038 | Accuracy: 0.8761 | F1: 0.9091 | Train Time: 10.9536 seconds
+Epoch 50 | Val Loss: 0.3951 | Val Accuracy: 0.8789 | Val F1: 0.9071
+Epoch 51 | Loss: 0.3854 | Accuracy: 0.8873 | F1: 0.9171 | Train Time: 7.4531 seconds
+Epoch 51 | Val Loss: 0.4756 | Val Accuracy: 0.8523 | Val F1: 0.8927
+Epoch 52 | Loss: 0.3862 | Accuracy: 0.8909 | F1: 0.9192 | Train Time: 5.4335 seconds
+Epoch 52 | Val Loss: 0.4154 | Val Accuracy: 0.8706 | Val F1: 0.9038
+Epoch 53 | Loss: 0.3767 | Accuracy: 0.8974 | F1: 0.9243 | Train Time: 5.3517 seconds
+Epoch 53 | Val Loss: 0.3570 | Val Accuracy: 0.9049 | Val F1: 0.9264
+Epoch 54 | Loss: 0.3817 | Accuracy: 0.8855 | F1: 0.9165 | Train Time: 5.3495 seconds
+Epoch 54 | Val Loss: 0.3390 | Val Accuracy: 0.9144 | Val F1: 0.9313
+Epoch 55 | Loss: 0.3803 | Accuracy: 0.8922 | F1: 0.9211 | Train Time: 5.4367 seconds
+Epoch 55 | Val Loss: 0.4197 | Val Accuracy: 0.8567 | Val F1: 0.8938
+Epoch 56 | Loss: 0.3797 | Accuracy: 0.8923 | F1: 0.9209 | Train Time: 5.4306 seconds
+Epoch 56 | Val Loss: 0.4365 | Val Accuracy: 0.8586 | Val F1: 0.8967
+Epoch 57 | Loss: 0.3721 | Accuracy: 0.9004 | F1: 0.9263 | Train Time: 5.4060 seconds
+Epoch 57 | Val Loss: 0.3479 | Val Accuracy: 0.9150 | Val F1: 0.9345
+Epoch 58 | Loss: 0.3731 | Accuracy: 0.8965 | F1: 0.9246 | Train Time: 5.3835 seconds
+Epoch 58 | Val Loss: 0.4408 | Val Accuracy: 0.8554 | Val F1: 0.8935
+Epoch 59 | Loss: 0.3835 | Accuracy: 0.8873 | F1: 0.9179 | Train Time: 5.3791 seconds
+Epoch 59 | Val Loss: 0.5163 | Val Accuracy: 0.8275 | Val F1: 0.8748
+Epoch 60 | Loss: 0.3755 | Accuracy: 0.9000 | F1: 0.9263 | Train Time: 5.4006 seconds
+Epoch 60 | Val Loss: 0.5925 | Val Accuracy: 0.8199 | Val F1: 0.8731
+Epoch 61 | Loss: 0.3701 | Accuracy: 0.9039 | F1: 0.9292 | Train Time: 5.3387 seconds
+Epoch 61 | Val Loss: 0.3448 | Val Accuracy: 0.9112 | Val F1: 0.9292
+Epoch 62 | Loss: 0.3729 | Accuracy: 0.8942 | F1: 0.9229 | Train Time: 5.3393 seconds
+Epoch 62 | Val Loss: 0.4675 | Val Accuracy: 0.8472 | Val F1: 0.8910
+Epoch 63 | Loss: 0.3774 | Accuracy: 0.8916 | F1: 0.9212 | Train Time: 5.3400 seconds
+Epoch 63 | Val Loss: 0.3442 | Val Accuracy: 0.9150 | Val F1: 0.9305
+Epoch 64 | Loss: 0.3797 | Accuracy: 0.8943 | F1: 0.9230 | Train Time: 5.3463 seconds
+Epoch 64 | Val Loss: 0.3975 | Val Accuracy: 0.8821 | Val F1: 0.9115
+Epoch 65 | Loss: 0.3762 | Accuracy: 0.8972 | F1: 0.9251 | Train Time: 5.3380 seconds
+Epoch 65 | Val Loss: 0.4310 | Val Accuracy: 0.8719 | Val F1: 0.9063
+Epoch 66 | Loss: 0.3643 | Accuracy: 0.9098 | F1: 0.9333 | Train Time: 5.2935 seconds
+Epoch 66 | Val Loss: 0.4470 | Val Accuracy: 0.8535 | Val F1: 0.8948
+Epoch 67 | Loss: 0.3677 | Accuracy: 0.9019 | F1: 0.9283 | Train Time: 5.3445 seconds
+Epoch 67 | Val Loss: 0.3612 | Val Accuracy: 0.8973 | Val F1: 0.9220
+Epoch 68 | Loss: 0.3723 | Accuracy: 0.8958 | F1: 0.9240 | Train Time: 5.3923 seconds
+Epoch 68 | Val Loss: 0.3849 | Val Accuracy: 0.8954 | Val F1: 0.9226
+Epoch 69 | Loss: 0.3672 | Accuracy: 0.9024 | F1: 0.9286 | Train Time: 5.4630 seconds
+Epoch 69 | Val Loss: 0.3746 | Val Accuracy: 0.9042 | Val F1: 0.9269
+Epoch 70 | Loss: 0.3655 | Accuracy: 0.9029 | F1: 0.9287 | Train Time: 5.4025 seconds
+Epoch 70 | Val Loss: 0.4098 | Val Accuracy: 0.8859 | Val F1: 0.9149
+Epoch 71 | Loss: 0.3595 | Accuracy: 0.9104 | F1: 0.9337 | Train Time: 5.3014 seconds
+Epoch 71 | Val Loss: 0.3552 | Val Accuracy: 0.9119 | Val F1: 0.9327
+Epoch 72 | Loss: 0.3570 | Accuracy: 0.9127 | F1: 0.9353 | Train Time: 5.4081 seconds
+Epoch 72 | Val Loss: 0.4179 | Val Accuracy: 0.8833 | Val F1: 0.9135
+Epoch 73 | Loss: 0.3592 | Accuracy: 0.9110 | F1: 0.9341 | Train Time: 5.3486 seconds
+Epoch 73 | Val Loss: 0.3593 | Val Accuracy: 0.8966 | Val F1: 0.9164
+Epoch 74 | Loss: 0.3543 | Accuracy: 0.9186 | F1: 0.9394 | Train Time: 5.3381 seconds
+Epoch 74 | Val Loss: 0.4220 | Val Accuracy: 0.8744 | Val F1: 0.9054
+Epoch 75 | Loss: 0.3563 | Accuracy: 0.9124 | F1: 0.9357 | Train Time: 5.3490 seconds
+Epoch 75 | Val Loss: 0.3924 | Val Accuracy: 0.8846 | Val F1: 0.9110
+Epoch 76 | Loss: 0.3568 | Accuracy: 0.9089 | F1: 0.9331 | Train Time: 5.3432 seconds
+Epoch 76 | Val Loss: 0.5182 | Val Accuracy: 0.8364 | Val F1: 0.8830
+Epoch 77 | Loss: 0.3515 | Accuracy: 0.9127 | F1: 0.9354 | Train Time: 5.4017 seconds
+Epoch 77 | Val Loss: 0.4865 | Val Accuracy: 0.8510 | Val F1: 0.8920
+Epoch 78 | Loss: 0.3485 | Accuracy: 0.9175 | F1: 0.9388 | Train Time: 5.4740 seconds
+Epoch 78 | Val Loss: 0.3858 | Val Accuracy: 0.8947 | Val F1: 0.9193
+Epoch 79 | Loss: 0.3514 | Accuracy: 0.9147 | F1: 0.9367 | Train Time: 5.3482 seconds
+Epoch 79 | Val Loss: 0.3458 | Val Accuracy: 0.9125 | Val F1: 0.9326
+Epoch 80 | Loss: 0.3488 | Accuracy: 0.9146 | F1: 0.9368 | Train Time: 5.3505 seconds
+Epoch 80 | Val Loss: 0.3591 | Val Accuracy: 0.9093 | Val F1: 0.9297
+Epoch 81 | Loss: 0.3516 | Accuracy: 0.9163 | F1: 0.9380 | Train Time: 5.4021 seconds
+Epoch 81 | Val Loss: 0.4615 | Val Accuracy: 0.8643 | Val F1: 0.9010
+Epoch 82 | Loss: 0.3498 | Accuracy: 0.9150 | F1: 0.9369 | Train Time: 5.4011 seconds
+Epoch 82 | Val Loss: 0.3768 | Val Accuracy: 0.9030 | Val F1: 0.9253
+Epoch 83 | Loss: 0.3494 | Accuracy: 0.9159 | F1: 0.9378 | Train Time: 5.4078 seconds
+Epoch 83 | Val Loss: 0.3890 | Val Accuracy: 0.8878 | Val F1: 0.9166
+Epoch 84 | Loss: 0.3476 | Accuracy: 0.9183 | F1: 0.9400 | Train Time: 5.3481 seconds
+Epoch 84 | Val Loss: 0.3382 | Val Accuracy: 0.9188 | Val F1: 0.9368
+Epoch 85 | Loss: 0.3499 | Accuracy: 0.9160 | F1: 0.9383 | Train Time: 5.3792 seconds
+Epoch 85 | Val Loss: 0.3604 | Val Accuracy: 0.9055 | Val F1: 0.9287
+Epoch 86 | Loss: 0.3474 | Accuracy: 0.9144 | F1: 0.9372 | Train Time: 5.4306 seconds
+Epoch 86 | Val Loss: 0.3600 | Val Accuracy: 0.9074 | Val F1: 0.9286
+Epoch 87 | Loss: 0.3472 | Accuracy: 0.9164 | F1: 0.9386 | Train Time: 11.5690 seconds
+Epoch 87 | Val Loss: 0.4076 | Val Accuracy: 0.8852 | Val F1: 0.9148
+Epoch 88 | Loss: 0.3481 | Accuracy: 0.9146 | F1: 0.9368 | Train Time: 5.4004 seconds
+Epoch 88 | Val Loss: 0.3898 | Val Accuracy: 0.8966 | Val F1: 0.9222
+Epoch 89 | Loss: 0.3405 | Accuracy: 0.9215 | F1: 0.9420 | Train Time: 5.3397 seconds
+Epoch 89 | Val Loss: 0.3796 | Val Accuracy: 0.8922 | Val F1: 0.9200
+Epoch 90 | Loss: 0.3410 | Accuracy: 0.9218 | F1: 0.9424 | Train Time: 5.3995 seconds
+Epoch 90 | Val Loss: 0.3421 | Val Accuracy: 0.9169 | Val F1: 0.9364
+Epoch 91 | Loss: 0.3460 | Accuracy: 0.9180 | F1: 0.9396 | Train Time: 5.4018 seconds
+Epoch 91 | Val Loss: 0.3845 | Val Accuracy: 0.8985 | Val F1: 0.9235
+Epoch 92 | Loss: 0.3427 | Accuracy: 0.9188 | F1: 0.9399 | Train Time: 5.4015 seconds
+Epoch 92 | Val Loss: 0.3981 | Val Accuracy: 0.8922 | Val F1: 0.9183
+Epoch 93 | Loss: 0.3438 | Accuracy: 0.9178 | F1: 0.9392 | Train Time: 5.3410 seconds
+Epoch 93 | Val Loss: 0.3662 | Val Accuracy: 0.9106 | Val F1: 0.9320
+Epoch 94 | Loss: 0.3429 | Accuracy: 0.9195 | F1: 0.9406 | Train Time: 5.3438 seconds
+Epoch 94 | Val Loss: 0.3516 | Val Accuracy: 0.9163 | Val F1: 0.9348
+Epoch 95 | Loss: 0.3392 | Accuracy: 0.9256 | F1: 0.9450 | Train Time: 6.3022 seconds
+Epoch 95 | Val Loss: 0.3851 | Val Accuracy: 0.8992 | Val F1: 0.9232
+Epoch 96 | Loss: 0.3379 | Accuracy: 0.9260 | F1: 0.9454 | Train Time: 10.4626 seconds
+Epoch 96 | Val Loss: 0.3533 | Val Accuracy: 0.9150 | Val F1: 0.9346
+Epoch 97 | Loss: 0.3382 | Accuracy: 0.9185 | F1: 0.9399 | Train Time: 5.4049 seconds
+Epoch 97 | Val Loss: 0.3975 | Val Accuracy: 0.8973 | Val F1: 0.9228
+Epoch 98 | Loss: 0.3353 | Accuracy: 0.9280 | F1: 0.9467 | Train Time: 9.8978 seconds
+Epoch 98 | Val Loss: 0.4022 | Val Accuracy: 0.8973 | Val F1: 0.9234
+Epoch 99 | Loss: 0.3366 | Accuracy: 0.9264 | F1: 0.9454 | Train Time: 5.3771 seconds
+Epoch 99 | Val Loss: 0.3802 | Val Accuracy: 0.9017 | Val F1: 0.9258
+Epoch 100 | Loss: 0.3427 | Accuracy: 0.9202 | F1: 0.9412 | Train Time: 5.4070 seconds
+Epoch 100 | Val Loss: 0.4033 | Val Accuracy: 0.8903 | Val F1: 0.9182
+Epoch 101 | Loss: 0.3372 | Accuracy: 0.9244 | F1: 0.9441 | Train Time: 5.3436 seconds
+Epoch 101 | Val Loss: 0.3467 | Val Accuracy: 0.9195 | Val F1: 0.9381
+Epoch 102 | Loss: 0.3368 | Accuracy: 0.9215 | F1: 0.9422 | Train Time: 5.3812 seconds
+Epoch 102 | Val Loss: 0.3491 | Val Accuracy: 0.9131 | Val F1: 0.9330
+Epoch 103 | Loss: 0.3385 | Accuracy: 0.9191 | F1: 0.9401 | Train Time: 5.3744 seconds
+Epoch 103 | Val Loss: 0.3804 | Val Accuracy: 0.9004 | Val F1: 0.9243
+Epoch 104 | Loss: 0.3326 | Accuracy: 0.9280 | F1: 0.9465 | Train Time: 5.3990 seconds
+Epoch 104 | Val Loss: 0.3689 | Val Accuracy: 0.9112 | Val F1: 0.9317
+Epoch 105 | Loss: 0.3322 | Accuracy: 0.9264 | F1: 0.9454 | Train Time: 5.3392 seconds
+Epoch 105 | Val Loss: 0.3506 | Val Accuracy: 0.9125 | Val F1: 0.9333
+Epoch 106 | Loss: 0.3306 | Accuracy: 0.9296 | F1: 0.9479 | Train Time: 5.3405 seconds
+Epoch 106 | Val Loss: 0.3406 | Val Accuracy: 0.9226 | Val F1: 0.9392
+Epoch 107 | Loss: 0.3353 | Accuracy: 0.9251 | F1: 0.9447 | Train Time: 5.3801 seconds
+Epoch 107 | Val Loss: 0.3944 | Val Accuracy: 0.8973 | Val F1: 0.9230
+Epoch 108 | Loss: 0.3321 | Accuracy: 0.9280 | F1: 0.9467 | Train Time: 5.3713 seconds
+Epoch 108 | Val Loss: 0.4143 | Val Accuracy: 0.8954 | Val F1: 0.9218
+Epoch 109 | Loss: 0.3296 | Accuracy: 0.9312 | F1: 0.9488 | Train Time: 5.3411 seconds
+Epoch 109 | Val Loss: 0.3690 | Val Accuracy: 0.9049 | Val F1: 0.9281
+Epoch 110 | Loss: 0.3366 | Accuracy: 0.9222 | F1: 0.9424 | Train Time: 5.3433 seconds
+Epoch 110 | Val Loss: 0.3556 | Val Accuracy: 0.9163 | Val F1: 0.9360
+Epoch 111 | Loss: 0.3317 | Accuracy: 0.9261 | F1: 0.9455 | Train Time: 5.3374 seconds
+Epoch 111 | Val Loss: 0.3383 | Val Accuracy: 0.9245 | Val F1: 0.9418
+Epoch 112 | Loss: 0.3310 | Accuracy: 0.9283 | F1: 0.9469 | Train Time: 5.3756 seconds
+Epoch 112 | Val Loss: 0.3680 | Val Accuracy: 0.9068 | Val F1: 0.9292
+Epoch 113 | Loss: 0.3336 | Accuracy: 0.9292 | F1: 0.9474 | Train Time: 5.3695 seconds
+Epoch 113 | Val Loss: 0.3741 | Val Accuracy: 0.9062 | Val F1: 0.9289
+Epoch 114 | Loss: 0.3295 | Accuracy: 0.9273 | F1: 0.9460 | Train Time: 5.3382 seconds
+Epoch 114 | Val Loss: 0.4022 | Val Accuracy: 0.8903 | Val F1: 0.9184
+Epoch 115 | Loss: 0.3287 | Accuracy: 0.9316 | F1: 0.9491 | Train Time: 5.3393 seconds
+Epoch 115 | Val Loss: 0.3417 | Val Accuracy: 0.9220 | Val F1: 0.9396
+Epoch 116 | Loss: 0.3335 | Accuracy: 0.9228 | F1: 0.9427 | Train Time: 5.3405 seconds
+Epoch 116 | Val Loss: 0.3873 | Val Accuracy: 0.8992 | Val F1: 0.9237
+Epoch 117 | Loss: 0.3292 | Accuracy: 0.9306 | F1: 0.9484 | Train Time: 5.3475 seconds
+Epoch 117 | Val Loss: 0.3833 | Val Accuracy: 0.9017 | Val F1: 0.9255
+Epoch 118 | Loss: 0.3301 | Accuracy: 0.9289 | F1: 0.9473 | Train Time: 5.4038 seconds
+Epoch 118 | Val Loss: 0.3990 | Val Accuracy: 0.8852 | Val F1: 0.9134
+Epoch 119 | Loss: 0.3360 | Accuracy: 0.9253 | F1: 0.9448 | Train Time: 5.4027 seconds
+Epoch 119 | Val Loss: 0.3481 | Val Accuracy: 0.9157 | Val F1: 0.9355
+Epoch 120 | Loss: 0.3323 | Accuracy: 0.9264 | F1: 0.9457 | Train Time: 5.4022 seconds
+Epoch 120 | Val Loss: 0.3524 | Val Accuracy: 0.9144 | Val F1: 0.9336
+Epoch 121 | Loss: 0.3317 | Accuracy: 0.9277 | F1: 0.9465 | Train Time: 5.3434 seconds
+Epoch 121 | Val Loss: 0.3846 | Val Accuracy: 0.8947 | Val F1: 0.9216
+Epoch 122 | Loss: 0.3308 | Accuracy: 0.9269 | F1: 0.9457 | Train Time: 5.3488 seconds
+Epoch 122 | Val Loss: 0.3476 | Val Accuracy: 0.9150 | Val F1: 0.9340
+Epoch 123 | Loss: 0.3294 | Accuracy: 0.9279 | F1: 0.9463 | Train Time: 5.3451 seconds
+Epoch 123 | Val Loss: 0.4136 | Val Accuracy: 0.8884 | Val F1: 0.9171
+Epoch 124 | Loss: 0.3314 | Accuracy: 0.9251 | F1: 0.9447 | Train Time: 5.2974 seconds
+Epoch 124 | Val Loss: 0.3398 | Val Accuracy: 0.9245 | Val F1: 0.9412
+Epoch 125 | Loss: 0.3304 | Accuracy: 0.9290 | F1: 0.9473 | Train Time: 5.4034 seconds
+Epoch 125 | Val Loss: 0.3585 | Val Accuracy: 0.9119 | Val F1: 0.9329
+Epoch 126 | Loss: 0.3251 | Accuracy: 0.9371 | F1: 0.9532 | Train Time: 5.3440 seconds
+Epoch 126 | Val Loss: 0.3449 | Val Accuracy: 0.9201 | Val F1: 0.9385
+Epoch 127 | Loss: 0.3277 | Accuracy: 0.9354 | F1: 0.9519 | Train Time: 5.3408 seconds
+Epoch 127 | Val Loss: 0.3376 | Val Accuracy: 0.9271 | Val F1: 0.9437
+Epoch 128 | Loss: 0.3257 | Accuracy: 0.9331 | F1: 0.9504 | Train Time: 5.3806 seconds
+Epoch 128 | Val Loss: 0.3330 | Val Accuracy: 0.9290 | Val F1: 0.9448
+Epoch 129 | Loss: 0.3262 | Accuracy: 0.9316 | F1: 0.9494 | Train Time: 5.4934 seconds
+Epoch 129 | Val Loss: 0.3598 | Val Accuracy: 0.9119 | Val F1: 0.9329
+Epoch 130 | Loss: 0.3343 | Accuracy: 0.9273 | F1: 0.9461 | Train Time: 5.3721 seconds
+Epoch 130 | Val Loss: 0.3612 | Val Accuracy: 0.9144 | Val F1: 0.9348
+Epoch 131 | Loss: 0.3256 | Accuracy: 0.9334 | F1: 0.9505 | Train Time: 5.3368 seconds
+Epoch 131 | Val Loss: 0.3321 | Val Accuracy: 0.9309 | Val F1: 0.9462
+Epoch 132 | Loss: 0.3212 | Accuracy: 0.9357 | F1: 0.9522 | Train Time: 5.3740 seconds
+Epoch 132 | Val Loss: 0.3980 | Val Accuracy: 0.8871 | Val F1: 0.9158
+Epoch 133 | Loss: 0.3256 | Accuracy: 0.9303 | F1: 0.9484 | Train Time: 5.3750 seconds
+Epoch 133 | Val Loss: 0.3822 | Val Accuracy: 0.8960 | Val F1: 0.9221
+Epoch 134 | Loss: 0.3285 | Accuracy: 0.9295 | F1: 0.9477 | Train Time: 5.3435 seconds
+Epoch 134 | Val Loss: 0.4724 | Val Accuracy: 0.8561 | Val F1: 0.8960
+Epoch 135 | Loss: 0.3249 | Accuracy: 0.9341 | F1: 0.9510 | Train Time: 5.3433 seconds
+Epoch 135 | Val Loss: 0.3491 | Val Accuracy: 0.9195 | Val F1: 0.9374
+Epoch 136 | Loss: 0.3290 | Accuracy: 0.9300 | F1: 0.9481 | Train Time: 5.3998 seconds
+Epoch 136 | Val Loss: 0.3408 | Val Accuracy: 0.9233 | Val F1: 0.9405
+Epoch 137 | Loss: 0.3256 | Accuracy: 0.9286 | F1: 0.9471 | Train Time: 5.2964 seconds
+Epoch 137 | Val Loss: 0.3534 | Val Accuracy: 0.9182 | Val F1: 0.9371
+Epoch 138 | Loss: 0.3236 | Accuracy: 0.9345 | F1: 0.9515 | Train Time: 5.3438 seconds
+Epoch 138 | Val Loss: 0.3653 | Val Accuracy: 0.9093 | Val F1: 0.9310
+Epoch 139 | Loss: 0.3233 | Accuracy: 0.9332 | F1: 0.9504 | Train Time: 5.3386 seconds
+Epoch 139 | Val Loss: 0.3650 | Val Accuracy: 0.9068 | Val F1: 0.9292
+Epoch 140 | Loss: 0.3232 | Accuracy: 0.9334 | F1: 0.9506 | Train Time: 5.3365 seconds
+Epoch 140 | Val Loss: 0.3228 | Val Accuracy: 0.9347 | Val F1: 0.9489
+Epoch 141 | Loss: 0.3276 | Accuracy: 0.9319 | F1: 0.9496 | Train Time: 5.3775 seconds
+Epoch 141 | Val Loss: 0.3482 | Val Accuracy: 0.9214 | Val F1: 0.9395
+Epoch 142 | Loss: 0.3297 | Accuracy: 0.9289 | F1: 0.9473 | Train Time: 5.3759 seconds
+Epoch 142 | Val Loss: 0.3773 | Val Accuracy: 0.9087 | Val F1: 0.9302
+Epoch 143 | Loss: 0.3270 | Accuracy: 0.9334 | F1: 0.9504 | Train Time: 5.3402 seconds
+Epoch 143 | Val Loss: 0.3641 | Val Accuracy: 0.9093 | Val F1: 0.9308
+Epoch 144 | Loss: 0.3240 | Accuracy: 0.9348 | F1: 0.9515 | Train Time: 5.3456 seconds
+Epoch 144 | Val Loss: 0.3497 | Val Accuracy: 0.9157 | Val F1: 0.9349
+Epoch 145 | Loss: 0.3248 | Accuracy: 0.9329 | F1: 0.9501 | Train Time: 5.3465 seconds
+Epoch 145 | Val Loss: 0.3356 | Val Accuracy: 0.9283 | Val F1: 0.9436
+Epoch 146 | Loss: 0.3258 | Accuracy: 0.9295 | F1: 0.9478 | Train Time: 5.3427 seconds
+Epoch 146 | Val Loss: 0.3870 | Val Accuracy: 0.9042 | Val F1: 0.9274
+Epoch 147 | Loss: 0.3255 | Accuracy: 0.9328 | F1: 0.9501 | Train Time: 5.3393 seconds
+Epoch 147 | Val Loss: 0.3438 | Val Accuracy: 0.9220 | Val F1: 0.9399
+Epoch 148 | Loss: 0.3246 | Accuracy: 0.9318 | F1: 0.9493 | Train Time: 5.3979 seconds
+Epoch 148 | Val Loss: 0.3446 | Val Accuracy: 0.9150 | Val F1: 0.9342
+Epoch 149 | Loss: 0.3237 | Accuracy: 0.9342 | F1: 0.9512 | Train Time: 5.3373 seconds
+Epoch 149 | Val Loss: 0.3364 | Val Accuracy: 0.9271 | Val F1: 0.9438
+Total training time (including validation): 979.8845 seconds
+Accumulated training time: 835.9604 seconds

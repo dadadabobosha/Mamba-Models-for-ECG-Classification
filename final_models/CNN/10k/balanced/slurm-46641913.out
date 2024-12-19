@@ -1,0 +1,1119 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading cuda 11.8 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 10.2.0 
+Lmod: loading openmpi 4.1.2 
+
+The following have been reloaded with a version change:
+  1) gcc/8.5.0 => gcc/10.2.0
+
+Mon Oct 28 14:52:35 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:87:00.0 Off |                    0 |
+| N/A   40C    P0             53W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Total Epoch Progress:   0%|          | 0/250 [00:00<?, ?epoch/s]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+
+Epoch 1/250
+train mode | time: 14:52:45
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.5108, Accuracy: 0.8533, F1: 0.8589, Precision: 0.8355, Recall: 0.8909
+Train Epoch 1 took 63.82 seconds.
+val mode | time: 14:53:49
+val
+Total Epoch Progress:   0%|          | 1/250 [01:09<4:48:43, 69.57s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4956, Accuracy: 0.8639, F1: 0.8774, Precision: 0.9244, Recall: 0.8362
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 2/250
+train mode | time: 14:53:55
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3895, Accuracy: 0.9639, F1: 0.9625, Precision: 0.9532, Recall: 0.9750
+Train Epoch 2 took 63.37 seconds.
+val mode | time: 14:54:58
+val
+Total Epoch Progress:   1%|          | 2/250 [02:18<4:45:51, 69.16s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4358, Accuracy: 0.9092, F1: 0.9203, Precision: 0.9373, Recall: 0.9052
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 3/250
+train mode | time: 14:55:04
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3627, Accuracy: 0.9728, F1: 0.9714, Precision: 0.9660, Recall: 0.9797
+Train Epoch 3 took 63.52 seconds.
+val mode | time: 14:56:07
+val
+Total Epoch Progress:   1%|          | 3/250 [03:27<4:44:45, 69.17s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4175, Accuracy: 0.9160, F1: 0.9298, Precision: 0.9055, Recall: 0.9563
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 4/250
+train mode | time: 14:56:13
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3481, Accuracy: 0.9818, F1: 0.9802, Precision: 0.9746, Recall: 0.9861
+Train Epoch 4 took 63.53 seconds.
+val mode | time: 14:57:16
+val
+Total Epoch Progress:   2%|▏         | 4/250 [04:36<4:43:27, 69.13s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4109, Accuracy: 0.9263, F1: 0.9348, Precision: 0.9663, Recall: 0.9063
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 5/250
+train mode | time: 14:57:22
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3403, Accuracy: 0.9845, F1: 0.9830, Precision: 0.9815, Recall: 0.9871
+Train Epoch 5 took 63.43 seconds.
+val mode | time: 14:58:25
+val
+Total Epoch Progress:   2%|▏         | 5/250 [05:45<4:41:52, 69.03s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4108, Accuracy: 0.9161, F1: 0.9256, Precision: 0.9568, Recall: 0.8977
+Validation accuracy did not improve for 1 epochs.
+
+Epoch 6/250
+train mode | time: 14:58:31
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3346, Accuracy: 0.9879, F1: 0.9866, Precision: 0.9856, Recall: 0.9900
+Train Epoch 6 took 63.53 seconds.
+val mode | time: 14:59:34
+val
+Total Epoch Progress:   2%|▏         | 6/250 [06:54<4:40:57, 69.09s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4005, Accuracy: 0.9205, F1: 0.9327, Precision: 0.9186, Recall: 0.9484
+Validation accuracy did not improve for 2 epochs.
+
+Epoch 7/250
+train mode | time: 14:59:40
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3313, Accuracy: 0.9894, F1: 0.9875, Precision: 0.9885, Recall: 0.9898
+Train Epoch 7 took 63.30 seconds.
+val mode | time: 15:00:43
+val
+Total Epoch Progress:   3%|▎         | 7/250 [08:03<4:39:41, 69.06s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3975, Accuracy: 0.9225, F1: 0.9327, Precision: 0.9496, Recall: 0.9172
+Validation accuracy did not improve for 3 epochs.
+
+Epoch 8/250
+train mode | time: 15:00:49
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3290, Accuracy: 0.9904, F1: 0.9889, Precision: 0.9892, Recall: 0.9911
+Train Epoch 8 took 63.57 seconds.
+val mode | time: 15:01:53
+val
+Total Epoch Progress:   3%|▎         | 8/250 [09:13<4:39:04, 69.19s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3839, Accuracy: 0.9344, F1: 0.9451, Precision: 0.9222, Recall: 0.9699
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 9/250
+train mode | time: 15:01:58
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3271, Accuracy: 0.9912, F1: 0.9900, Precision: 0.9903, Recall: 0.9920
+Train Epoch 9 took 63.56 seconds.
+val mode | time: 15:03:02
+val
+Total Epoch Progress:   4%|▎         | 9/250 [10:22<4:37:47, 69.16s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3892, Accuracy: 0.9226, F1: 0.9328, Precision: 0.9505, Recall: 0.9166
+Validation accuracy did not improve for 1 epochs.
+
+Epoch 10/250
+train mode | time: 15:03:08
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3262, Accuracy: 0.9916, F1: 0.9904, Precision: 0.9880, Recall: 0.9931
+Train Epoch 10 took 63.45 seconds.
+val mode | time: 15:04:11
+val
+Total Epoch Progress:   4%|▍         | 10/250 [11:31<4:36:24, 69.10s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3879, Accuracy: 0.9294, F1: 0.9391, Precision: 0.9470, Recall: 0.9321
+Validation accuracy did not improve for 2 epochs.
+
+Epoch 11/250
+train mode | time: 15:04:17
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3243, Accuracy: 0.9932, F1: 0.9918, Precision: 0.9903, Recall: 0.9934
+Train Epoch 11 took 63.21 seconds.
+val mode | time: 15:05:20
+val
+Total Epoch Progress:   4%|▍         | 11/250 [12:40<4:34:57, 69.03s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3955, Accuracy: 0.9150, F1: 0.9269, Precision: 0.9257, Recall: 0.9290
+Validation accuracy did not improve for 3 epochs.
+
+Epoch 12/250
+train mode | time: 15:05:25
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3233, Accuracy: 0.9932, F1: 0.9918, Precision: 0.9902, Recall: 0.9934
+Train Epoch 12 took 63.24 seconds.
+val mode | time: 15:06:29
+val
+Total Epoch Progress:   5%|▍         | 12/250 [13:49<4:33:44, 69.01s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3937, Accuracy: 0.9206, F1: 0.9303, Precision: 0.9501, Recall: 0.9124
+Validation accuracy did not improve for 4 epochs.
+
+Epoch 13/250
+train mode | time: 15:06:34
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3230, Accuracy: 0.9930, F1: 0.9915, Precision: 0.9910, Recall: 0.9932
+Train Epoch 13 took 63.32 seconds.
+val mode | time: 15:07:38
+val
+Total Epoch Progress:   5%|▌         | 13/250 [14:58<4:32:33, 69.00s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3831, Accuracy: 0.9300, F1: 0.9410, Precision: 0.9262, Recall: 0.9574
+Validation accuracy did not improve for 5 epochs.
+
+Epoch 14/250
+train mode | time: 15:07:43
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3225, Accuracy: 0.9933, F1: 0.9918, Precision: 0.9927, Recall: 0.9932
+Train Epoch 14 took 63.56 seconds.
+val mode | time: 15:08:47
+val
+Total Epoch Progress:   6%|▌         | 14/250 [16:07<4:31:32, 69.04s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4162, Accuracy: 0.8928, F1: 0.9093, Precision: 0.8988, Recall: 0.9216
+Validation accuracy did not improve for 6 epochs.
+
+Epoch 15/250
+train mode | time: 15:08:52
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3216, Accuracy: 0.9937, F1: 0.9925, Precision: 0.9921, Recall: 0.9937
+Train Epoch 15 took 63.44 seconds.
+val mode | time: 15:09:56
+val
+Total Epoch Progress:   6%|▌         | 15/250 [17:16<4:30:08, 68.97s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3843, Accuracy: 0.9309, F1: 0.9399, Precision: 0.9509, Recall: 0.9300
+Validation accuracy did not improve for 7 epochs.
+
+Epoch 16/250
+train mode | time: 15:10:01
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3214, Accuracy: 0.9940, F1: 0.9928, Precision: 0.9940, Recall: 0.9939
+Train Epoch 16 took 63.79 seconds.
+val mode | time: 15:11:05
+val
+Total Epoch Progress:   6%|▋         | 16/250 [18:25<4:29:52, 69.20s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3894, Accuracy: 0.9223, F1: 0.9316, Precision: 0.9550, Recall: 0.9104
+Validation accuracy did not improve for 8 epochs.
+
+Epoch 17/250
+train mode | time: 15:11:11
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3209, Accuracy: 0.9943, F1: 0.9934, Precision: 0.9946, Recall: 0.9944
+Train Epoch 17 took 63.25 seconds.
+val mode | time: 15:12:14
+val
+Total Epoch Progress:   7%|▋         | 17/250 [19:34<4:28:31, 69.15s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3728, Accuracy: 0.9383, F1: 0.9488, Precision: 0.9155, Recall: 0.9851
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 18/250
+train mode | time: 15:12:20
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3208, Accuracy: 0.9938, F1: 0.9931, Precision: 0.9927, Recall: 0.9944
+Train Epoch 18 took 63.48 seconds.
+val mode | time: 15:13:24
+val
+Total Epoch Progress:   7%|▋         | 18/250 [20:43<4:27:12, 69.11s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3838, Accuracy: 0.9281, F1: 0.9391, Precision: 0.9291, Recall: 0.9501
+Validation accuracy did not improve for 1 epochs.
+
+Epoch 19/250
+train mode | time: 15:13:29
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3205, Accuracy: 0.9942, F1: 0.9930, Precision: 0.9946, Recall: 0.9936
+Train Epoch 19 took 63.49 seconds.
+val mode | time: 15:14:33
+val
+Total Epoch Progress:   8%|▊         | 19/250 [21:52<4:26:09, 69.13s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4345, Accuracy: 0.8717, F1: 0.8784, Precision: 0.9833, Recall: 0.7951
+Validation accuracy did not improve for 2 epochs.
+
+Epoch 20/250
+train mode | time: 15:14:38
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3197, Accuracy: 0.9949, F1: 0.9941, Precision: 0.9937, Recall: 0.9952
+Train Epoch 20 took 63.62 seconds.
+val mode | time: 15:15:42
+val
+Total Epoch Progress:   8%|▊         | 20/250 [23:02<4:25:08, 69.17s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3718, Accuracy: 0.9421, F1: 0.9515, Precision: 0.9336, Recall: 0.9708
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 21/250
+train mode | time: 15:15:47
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3192, Accuracy: 0.9952, F1: 0.9942, Precision: 0.9949, Recall: 0.9949
+Train Epoch 21 took 63.24 seconds.
+val mode | time: 15:16:51
+val
+Total Epoch Progress:   8%|▊         | 21/250 [24:11<4:23:39, 69.08s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3803, Accuracy: 0.9319, F1: 0.9407, Precision: 0.9514, Recall: 0.9310
+Validation accuracy did not improve for 1 epochs.
+
+Epoch 22/250
+train mode | time: 15:16:56
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3191, Accuracy: 0.9952, F1: 0.9942, Precision: 0.9952, Recall: 0.9953
+Train Epoch 22 took 63.57 seconds.
+val mode | time: 15:18:00
+val
+Total Epoch Progress:   9%|▉         | 22/250 [25:20<4:22:41, 69.13s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4274, Accuracy: 0.8725, F1: 0.8802, Precision: 0.9707, Recall: 0.8062
+Validation accuracy did not improve for 2 epochs.
+
+Epoch 23/250
+train mode | time: 15:18:06
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3192, Accuracy: 0.9957, F1: 0.9947, Precision: 0.9952, Recall: 0.9953
+Train Epoch 23 took 63.61 seconds.
+val mode | time: 15:19:09
+val
+Total Epoch Progress:   9%|▉         | 23/250 [26:29<4:21:33, 69.13s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3890, Accuracy: 0.9216, F1: 0.9303, Precision: 0.9642, Recall: 0.8997
+Validation accuracy did not improve for 3 epochs.
+
+Epoch 24/250
+train mode | time: 15:19:15
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3187, Accuracy: 0.9957, F1: 0.9943, Precision: 0.9956, Recall: 0.9952
+Train Epoch 24 took 63.46 seconds.
+val mode | time: 15:20:18
+val
+Total Epoch Progress:  10%|▉         | 24/250 [27:38<4:20:27, 69.15s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3858, Accuracy: 0.9245, F1: 0.9345, Precision: 0.9438, Recall: 0.9263
+Validation accuracy did not improve for 4 epochs.
+
+Epoch 25/250
+train mode | time: 15:20:24
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3186, Accuracy: 0.9956, F1: 0.9946, Precision: 0.9959, Recall: 0.9952
+Train Epoch 25 took 63.55 seconds.
+val mode | time: 15:21:27
+val
+Total Epoch Progress:  10%|█         | 25/250 [28:48<4:19:35, 69.22s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3684, Accuracy: 0.9451, F1: 0.9527, Precision: 0.9531, Recall: 0.9529
+
+New best validation accuracy, saving checkpoint
+
+
+Epoch 26/250
+train mode | time: 15:21:33
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3182, Accuracy: 0.9961, F1: 0.9952, Precision: 0.9955, Recall: 0.9958
+Train Epoch 26 took 63.90 seconds.
+val mode | time: 15:22:37
+val
+Total Epoch Progress:  10%|█         | 26/250 [29:57<4:18:53, 69.35s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3870, Accuracy: 0.9252, F1: 0.9348, Precision: 0.9536, Recall: 0.9177
+Validation accuracy did not improve for 1 epochs.
+
+Epoch 27/250
+train mode | time: 15:22:43
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3186, Accuracy: 0.9955, F1: 0.9944, Precision: 0.9956, Recall: 0.9956
+Train Epoch 27 took 63.52 seconds.
+val mode | time: 15:23:46
+val
+Total Epoch Progress:  11%|█         | 27/250 [31:07<4:17:51, 69.38s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3786, Accuracy: 0.9334, F1: 0.9421, Precision: 0.9543, Recall: 0.9308
+Validation accuracy did not improve for 2 epochs.
+
+Epoch 28/250
+train mode | time: 15:23:52
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3182, Accuracy: 0.9961, F1: 0.9948, Precision: 0.9939, Recall: 0.9957
+Train Epoch 28 took 63.54 seconds.
+val mode | time: 15:24:56
+val
+Total Epoch Progress:  11%|█         | 28/250 [32:16<4:16:40, 69.37s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3852, Accuracy: 0.9276, F1: 0.9377, Precision: 0.9437, Recall: 0.9326
+Validation accuracy did not improve for 3 epochs.
+
+Epoch 29/250
+train mode | time: 15:25:02
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3183, Accuracy: 0.9958, F1: 0.9946, Precision: 0.9959, Recall: 0.9955
+Train Epoch 29 took 63.63 seconds.
+val mode | time: 15:26:05
+val
+Total Epoch Progress:  12%|█▏        | 29/250 [33:25<4:15:18, 69.32s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3803, Accuracy: 0.9320, F1: 0.9402, Precision: 0.9642, Recall: 0.9183
+Validation accuracy did not improve for 4 epochs.
+
+Epoch 30/250
+train mode | time: 15:26:11
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3175, Accuracy: 0.9966, F1: 0.9954, Precision: 0.9970, Recall: 0.9960
+Train Epoch 30 took 63.59 seconds.
+val mode | time: 15:27:15
+val
+Total Epoch Progress:  12%|█▏        | 30/250 [34:34<4:14:00, 69.27s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3900, Accuracy: 0.9203, F1: 0.9301, Precision: 0.9551, Recall: 0.9074
+Validation accuracy did not improve for 5 epochs.
+
+Epoch 31/250
+train mode | time: 15:27:20
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3177, Accuracy: 0.9963, F1: 0.9950, Precision: 0.9969, Recall: 0.9955
+Train Epoch 31 took 63.60 seconds.
+val mode | time: 15:28:24
+val
+Total Epoch Progress:  12%|█▏        | 31/250 [35:44<4:12:48, 69.26s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3851, Accuracy: 0.9249, F1: 0.9357, Precision: 0.9319, Recall: 0.9403
+Validation accuracy did not improve for 6 epochs.
+
+Epoch 32/250
+train mode | time: 15:28:29
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3178, Accuracy: 0.9962, F1: 0.9951, Precision: 0.9966, Recall: 0.9958
+Train Epoch 32 took 63.47 seconds.
+val mode | time: 15:29:33
+val
+Total Epoch Progress:  13%|█▎        | 32/250 [36:53<4:11:25, 69.20s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3939, Accuracy: 0.9151, F1: 0.9253, Precision: 0.9530, Recall: 0.9004
+Validation accuracy did not improve for 7 epochs.
+
+Epoch 33/250
+train mode | time: 15:29:38
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3169, Accuracy: 0.9971, F1: 0.9960, Precision: 0.9977, Recall: 0.9965
+Train Epoch 33 took 63.62 seconds.
+val mode | time: 15:30:42
+val
+Total Epoch Progress:  13%|█▎        | 33/250 [38:02<4:10:03, 69.14s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4111, Accuracy: 0.8978, F1: 0.9065, Precision: 0.9720, Recall: 0.8500
+Validation accuracy did not improve for 8 epochs.
+
+Epoch 34/250
+train mode | time: 15:30:47
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3173, Accuracy: 0.9969, F1: 0.9961, Precision: 0.9959, Recall: 0.9966
+Train Epoch 34 took 63.51 seconds.
+val mode | time: 15:31:51
+val
+Total Epoch Progress:  14%|█▎        | 34/250 [39:11<4:08:55, 69.14s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3878, Accuracy: 0.9230, F1: 0.9324, Precision: 0.9577, Recall: 0.9093
+Validation accuracy did not improve for 9 epochs.
+
+Epoch 35/250
+train mode | time: 15:31:57
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3169, Accuracy: 0.9971, F1: 0.9960, Precision: 0.9976, Recall: 0.9965
+Train Epoch 35 took 63.70 seconds.
+val mode | time: 15:33:00
+val
+Total Epoch Progress:  14%|█▍        | 35/250 [40:20<4:08:01, 69.22s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3743, Accuracy: 0.9359, F1: 0.9469, Precision: 0.9167, Recall: 0.9798
+Validation accuracy did not improve for 10 epochs.
+
+Epoch 36/250
+train mode | time: 15:33:06
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3167, Accuracy: 0.9972, F1: 0.9960, Precision: 0.9979, Recall: 0.9963
+Train Epoch 36 took 63.64 seconds.
+val mode | time: 15:34:10
+val
+Total Epoch Progress:  14%|█▍        | 36/250 [41:29<4:06:55, 69.23s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3943, Accuracy: 0.9154, F1: 0.9252, Precision: 0.9531, Recall: 0.8998
+Validation accuracy did not improve for 11 epochs.
+
+Epoch 37/250
+train mode | time: 15:34:15
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3170, Accuracy: 0.9969, F1: 0.9969, Precision: 0.9964, Recall: 0.9974
+Train Epoch 37 took 63.66 seconds.
+val mode | time: 15:35:19
+val
+Total Epoch Progress:  15%|█▍        | 37/250 [42:39<4:05:48, 69.24s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3855, Accuracy: 0.9262, F1: 0.9367, Precision: 0.9360, Recall: 0.9383
+Validation accuracy did not improve for 12 epochs.
+
+Epoch 38/250
+train mode | time: 15:35:24
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3167, Accuracy: 0.9971, F1: 0.9969, Precision: 0.9969, Recall: 0.9970
+Train Epoch 38 took 63.54 seconds.
+val mode | time: 15:36:28
+val
+Total Epoch Progress:  15%|█▌        | 38/250 [43:48<4:04:39, 69.24s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3855, Accuracy: 0.9242, F1: 0.9330, Precision: 0.9666, Recall: 0.9023
+Validation accuracy did not improve for 13 epochs.
+
+Epoch 39/250
+train mode | time: 15:36:34
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3164, Accuracy: 0.9977, F1: 0.9977, Precision: 0.9970, Recall: 0.9985
+Train Epoch 39 took 63.67 seconds.
+val mode | time: 15:37:37
+val
+Total Epoch Progress:  16%|█▌        | 39/250 [44:57<4:03:29, 69.24s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3931, Accuracy: 0.9176, F1: 0.9288, Precision: 0.9376, Recall: 0.9210
+Validation accuracy did not improve for 14 epochs.
+
+Epoch 40/250
+train mode | time: 15:37:43
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3165, Accuracy: 0.9973, F1: 0.9969, Precision: 0.9968, Recall: 0.9973
+Train Epoch 40 took 63.66 seconds.
+val mode | time: 15:38:47
+val
+Total Epoch Progress:  16%|█▌        | 40/250 [46:07<4:02:23, 69.25s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3811, Accuracy: 0.9289, F1: 0.9408, Precision: 0.9161, Recall: 0.9677
+Validation accuracy did not improve for 15 epochs.
+
+Epoch 41/250
+train mode | time: 15:38:52
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3167, Accuracy: 0.9972, F1: 0.9971, Precision: 0.9969, Recall: 0.9974
+Train Epoch 41 took 63.40 seconds.
+val mode | time: 15:39:56
+val
+Total Epoch Progress:  16%|█▋        | 41/250 [47:16<4:01:06, 69.22s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3930, Accuracy: 0.9164, F1: 0.9259, Precision: 0.9630, Recall: 0.8924
+Validation accuracy did not improve for 16 epochs.
+
+Epoch 42/250
+train mode | time: 15:40:01
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3168, Accuracy: 0.9971, F1: 0.9967, Precision: 0.9968, Recall: 0.9970
+Train Epoch 42 took 63.44 seconds.
+val mode | time: 15:41:05
+val
+Total Epoch Progress:  17%|█▋        | 42/250 [48:25<3:59:53, 69.20s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3718, Accuracy: 0.9403, F1: 0.9489, Precision: 0.9480, Recall: 0.9506
+Validation accuracy did not improve for 17 epochs.
+
+Epoch 43/250
+train mode | time: 15:41:11
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3164, Accuracy: 0.9974, F1: 0.9975, Precision: 0.9969, Recall: 0.9982
+Train Epoch 43 took 63.66 seconds.
+val mode | time: 15:42:14
+val
+Total Epoch Progress:  17%|█▋        | 43/250 [49:34<3:58:50, 69.23s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3834, Accuracy: 0.9241, F1: 0.9354, Precision: 0.9330, Recall: 0.9387
+Validation accuracy did not improve for 18 epochs.
+
+Epoch 44/250
+train mode | time: 15:42:20
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3166, Accuracy: 0.9971, F1: 0.9963, Precision: 0.9966, Recall: 0.9967
+Train Epoch 44 took 63.66 seconds.
+val mode | time: 15:43:24
+val
+Total Epoch Progress:  18%|█▊        | 44/250 [50:43<3:57:41, 69.23s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4384, Accuracy: 0.8667, F1: 0.8852, Precision: 0.8926, Recall: 0.8790
+Validation accuracy did not improve for 19 epochs.
+
+Epoch 45/250
+train mode | time: 15:43:29
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3162, Accuracy: 0.9977, F1: 0.9970, Precision: 0.9972, Recall: 0.9973
+Train Epoch 45 took 63.62 seconds.
+val mode | time: 15:44:33
+val
+Total Epoch Progress:  18%|█▊        | 45/250 [51:53<3:56:35, 69.25s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3787, Accuracy: 0.9305, F1: 0.9403, Precision: 0.9411, Recall: 0.9408
+Validation accuracy did not improve for 20 epochs.
+
+Epoch 46/250
+train mode | time: 15:44:38
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3160, Accuracy: 0.9978, F1: 0.9964, Precision: 0.9979, Recall: 0.9970
+Train Epoch 46 took 63.79 seconds.
+val mode | time: 15:45:42
+val
+Total Epoch Progress:  18%|█▊        | 46/250 [53:02<3:55:34, 69.28s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4110, Accuracy: 0.8955, F1: 0.9058, Precision: 0.9604, Recall: 0.8582
+Validation accuracy did not improve for 21 epochs.
+
+Epoch 47/250
+train mode | time: 15:45:48
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3157, Accuracy: 0.9980, F1: 0.9966, Precision: 0.9984, Recall: 0.9970
+Train Epoch 47 took 63.52 seconds.
+val mode | time: 15:46:51
+val
+Total Epoch Progress:  19%|█▉        | 47/250 [54:11<3:54:15, 69.24s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3754, Accuracy: 0.9356, F1: 0.9447, Precision: 0.9488, Recall: 0.9412
+Validation accuracy did not improve for 22 epochs.
+
+Epoch 48/250
+train mode | time: 15:46:57
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3161, Accuracy: 0.9977, F1: 0.9966, Precision: 0.9982, Recall: 0.9969
+Train Epoch 48 took 63.70 seconds.
+val mode | time: 15:48:01
+val
+Total Epoch Progress:  19%|█▉        | 48/250 [55:20<3:53:11, 69.27s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.6204, Accuracy: 0.6843, F1: 0.7439, Precision: 0.7114, Recall: 0.7820
+Validation accuracy did not improve for 23 epochs.
+
+Epoch 49/250
+train mode | time: 15:48:06
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3159, Accuracy: 0.9977, F1: 0.9970, Precision: 0.9977, Recall: 0.9972
+Train Epoch 49 took 63.53 seconds.
+val mode | time: 15:49:10
+val
+Total Epoch Progress:  20%|█▉        | 49/250 [56:30<3:51:56, 69.24s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3910, Accuracy: 0.9172, F1: 0.9308, Precision: 0.9140, Recall: 0.9490
+Validation accuracy did not improve for 24 epochs.
+
+Epoch 50/250
+train mode | time: 15:49:15
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3161, Accuracy: 0.9975, F1: 0.9965, Precision: 0.9977, Recall: 0.9968
+Train Epoch 50 took 63.56 seconds.
+val mode | time: 15:50:19
+val
+Total Epoch Progress:  20%|██        | 50/250 [57:39<3:50:33, 69.17s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.4204, Accuracy: 0.8881, F1: 0.8981, Precision: 0.9567, Recall: 0.8474
+Validation accuracy did not improve for 25 epochs.
+
+Epoch 51/250
+train mode | time: 15:50:24
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3159, Accuracy: 0.9977, F1: 0.9969, Precision: 0.9975, Recall: 0.9972
+Train Epoch 51 took 63.68 seconds.
+val mode | time: 15:51:28
+val
+Total Epoch Progress:  20%|██        | 51/250 [58:48<3:49:28, 69.19s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3798, Accuracy: 0.9294, F1: 0.9376, Precision: 0.9593, Recall: 0.9179
+Validation accuracy did not improve for 26 epochs.
+
+Epoch 52/250
+train mode | time: 15:51:34
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3156, Accuracy: 0.9982, F1: 0.9983, Precision: 0.9981, Recall: 0.9985
+Train Epoch 52 took 63.47 seconds.
+val mode | time: 15:52:37
+val
+Total Epoch Progress:  21%|██        | 52/250 [59:57<3:48:22, 69.21s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3834, Accuracy: 0.9271, F1: 0.9367, Precision: 0.9473, Recall: 0.9271
+Validation accuracy did not improve for 27 epochs.
+
+Epoch 53/250
+train mode | time: 15:52:43
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3158, Accuracy: 0.9979, F1: 0.9980, Precision: 0.9969, Recall: 0.9993
+Train Epoch 53 took 63.60 seconds.
+val mode | time: 15:53:46
+val
+Total Epoch Progress:  21%|██        | 53/250 [1:01:06<3:47:16, 69.22s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3821, Accuracy: 0.9264, F1: 0.9365, Precision: 0.9432, Recall: 0.9307
+Validation accuracy did not improve for 28 epochs.
+
+Epoch 54/250
+train mode | time: 15:53:52
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3155, Accuracy: 0.9983, F1: 0.9980, Precision: 0.9983, Recall: 0.9980
+Train Epoch 54 took 63.54 seconds.
+val mode | time: 15:54:56
+val
+Total Epoch Progress:  22%|██▏       | 54/250 [1:02:16<3:46:06, 69.22s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3682, Accuracy: 0.9418, F1: 0.9506, Precision: 0.9387, Recall: 0.9635
+Validation accuracy did not improve for 29 epochs.
+
+Epoch 55/250
+train mode | time: 15:55:01
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3159, Accuracy: 0.9978, F1: 0.9977, Precision: 0.9973, Recall: 0.9981
+Train Epoch 55 took 63.61 seconds.
+val mode | time: 15:56:05
+val
+Total Epoch Progress:  22%|██▏       | 55/250 [1:03:25<3:45:06, 69.26s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3832, Accuracy: 0.9259, F1: 0.9358, Precision: 0.9462, Recall: 0.9264
+Validation accuracy did not improve for 30 epochs.
+
+Epoch 56/250
+train mode | time: 15:56:11
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3153, Accuracy: 0.9984, F1: 0.9982, Precision: 0.9984, Recall: 0.9982
+Train Epoch 56 took 63.84 seconds.
+val mode | time: 15:57:15
+val
+Total Epoch Progress:  22%|██▏       | 56/250 [1:04:35<3:44:16, 69.36s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3807, Accuracy: 0.9296, F1: 0.9391, Precision: 0.9475, Recall: 0.9317
+Validation accuracy did not improve for 31 epochs.
+
+Epoch 57/250
+train mode | time: 15:57:20
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3157, Accuracy: 0.9979, F1: 0.9979, Precision: 0.9973, Recall: 0.9987
+Train Epoch 57 took 63.93 seconds.
+val mode | time: 15:58:24
+val
+Total Epoch Progress:  23%|██▎       | 57/250 [1:05:44<3:43:18, 69.42s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3851, Accuracy: 0.9244, F1: 0.9343, Precision: 0.9506, Recall: 0.9196
+Validation accuracy did not improve for 32 epochs.
+
+Epoch 58/250
+train mode | time: 15:58:30
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3151, Accuracy: 0.9984, F1: 0.9984, Precision: 0.9981, Recall: 0.9986
+Train Epoch 58 took 63.57 seconds.
+val mode | time: 15:59:33
+val
+Total Epoch Progress:  23%|██▎       | 58/250 [1:06:53<3:42:01, 69.38s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3806, Accuracy: 0.9304, F1: 0.9400, Precision: 0.9503, Recall: 0.9305
+Validation accuracy did not improve for 33 epochs.
+
+Epoch 59/250
+train mode | time: 15:59:39
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3155, Accuracy: 0.9980, F1: 0.9978, Precision: 0.9977, Recall: 0.9978
+Train Epoch 59 took 63.45 seconds.
+val mode | time: 16:00:43
+val
+Total Epoch Progress:  24%|██▎       | 59/250 [1:08:03<3:40:40, 69.32s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3909, Accuracy: 0.9185, F1: 0.9269, Precision: 0.9726, Recall: 0.8862
+Validation accuracy did not improve for 34 epochs.
+
+Epoch 60/250
+train mode | time: 16:00:48
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3154, Accuracy: 0.9982, F1: 0.9973, Precision: 0.9979, Recall: 0.9977
+Train Epoch 60 took 63.70 seconds.
+val mode | time: 16:01:52
+val
+Total Epoch Progress:  24%|██▍       | 60/250 [1:09:12<3:39:27, 69.30s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3827, Accuracy: 0.9284, F1: 0.9365, Precision: 0.9711, Recall: 0.9052
+Validation accuracy did not improve for 35 epochs.
+
+Epoch 61/250
+train mode | time: 16:01:58
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3160, Accuracy: 0.9975, F1: 0.9965, Precision: 0.9972, Recall: 0.9967
+Train Epoch 61 took 63.59 seconds.
+val mode | time: 16:03:01
+val
+Total Epoch Progress:  24%|██▍       | 61/250 [1:10:21<3:38:26, 69.35s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3711, Accuracy: 0.9382, F1: 0.9463, Precision: 0.9602, Recall: 0.9336
+Validation accuracy did not improve for 36 epochs.
+
+Epoch 62/250
+train mode | time: 16:03:07
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3151, Accuracy: 0.9985, F1: 0.9986, Precision: 0.9983, Recall: 0.9989
+Train Epoch 62 took 63.37 seconds.
+val mode | time: 16:04:10
+val
+Total Epoch Progress:  25%|██▍       | 62/250 [1:11:30<3:37:06, 69.29s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3686, Accuracy: 0.9434, F1: 0.9521, Precision: 0.9399, Recall: 0.9651
+Validation accuracy did not improve for 37 epochs.
+
+Epoch 63/250
+train mode | time: 16:04:16
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3153, Accuracy: 0.9982, F1: 0.9980, Precision: 0.9979, Recall: 0.9982
+Train Epoch 63 took 63.57 seconds.
+val mode | time: 16:05:20
+val
+Total Epoch Progress:  25%|██▌       | 63/250 [1:12:40<3:36:01, 69.31s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3971, Accuracy: 0.9118, F1: 0.9198, Precision: 0.9777, Recall: 0.8693
+Validation accuracy did not improve for 38 epochs.
+
+Epoch 64/250
+train mode | time: 16:05:26
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3150, Accuracy: 0.9984, F1: 0.9984, Precision: 0.9980, Recall: 0.9988
+Train Epoch 64 took 63.58 seconds.
+val mode | time: 16:06:29
+val
+Total Epoch Progress:  26%|██▌       | 64/250 [1:13:49<3:34:46, 69.28s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3791, Accuracy: 0.9293, F1: 0.9377, Precision: 0.9526, Recall: 0.9241
+Validation accuracy did not improve for 39 epochs.
+
+Epoch 65/250
+train mode | time: 16:06:35
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3156, Accuracy: 0.9978, F1: 0.9967, Precision: 0.9976, Recall: 0.9971
+Train Epoch 65 took 63.58 seconds.
+val mode | time: 16:07:38
+val
+Total Epoch Progress:  26%|██▌       | 65/250 [1:14:58<3:33:35, 69.27s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3901, Accuracy: 0.9193, F1: 0.9300, Precision: 0.9387, Recall: 0.9226
+Validation accuracy did not improve for 40 epochs.
+
+Epoch 66/250
+train mode | time: 16:07:44
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3154, Accuracy: 0.9980, F1: 0.9972, Precision: 0.9979, Recall: 0.9974
+Train Epoch 66 took 63.63 seconds.
+val mode | time: 16:08:48
+val
+Total Epoch Progress:  26%|██▋       | 66/250 [1:16:08<3:32:26, 69.28s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3897, Accuracy: 0.9194, F1: 0.9313, Precision: 0.9277, Recall: 0.9358
+Validation accuracy did not improve for 41 epochs.
+
+Epoch 67/250
+train mode | time: 16:08:53
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3153, Accuracy: 0.9984, F1: 0.9979, Precision: 0.9987, Recall: 0.9978
+Train Epoch 67 took 63.61 seconds.
+val mode | time: 16:09:57
+val
+Total Epoch Progress:  27%|██▋       | 67/250 [1:17:17<3:31:20, 69.29s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3914, Accuracy: 0.9171, F1: 0.9263, Precision: 0.9592, Recall: 0.8963
+Validation accuracy did not improve for 42 epochs.
+
+Epoch 68/250
+train mode | time: 16:10:03
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3154, Accuracy: 0.9981, F1: 0.9978, Precision: 0.9978, Recall: 0.9979
+Train Epoch 68 took 63.67 seconds.
+val mode | time: 16:11:06
+val
+Total Epoch Progress:  27%|██▋       | 68/250 [1:18:26<3:30:22, 69.35s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3897, Accuracy: 0.9184, F1: 0.9286, Precision: 0.9514, Recall: 0.9077
+Validation accuracy did not improve for 43 epochs.
+
+Epoch 69/250
+train mode | time: 16:11:12
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3149, Accuracy: 0.9986, F1: 0.9987, Precision: 0.9984, Recall: 0.9989
+Train Epoch 69 took 63.46 seconds.
+val mode | time: 16:12:16
+val
+Total Epoch Progress:  28%|██▊       | 69/250 [1:19:36<3:29:16, 69.37s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3747, Accuracy: 0.9370, F1: 0.9458, Precision: 0.9518, Recall: 0.9405
+Validation accuracy did not improve for 44 epochs.
+
+Epoch 70/250
+train mode | time: 16:12:22
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3151, Accuracy: 0.9984, F1: 0.9975, Precision: 0.9988, Recall: 0.9977
+Train Epoch 70 took 63.53 seconds.
+val mode | time: 16:13:25
+val
+Total Epoch Progress:  28%|██▊       | 70/250 [1:20:45<3:28:04, 69.36s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3962, Accuracy: 0.9134, F1: 0.9244, Precision: 0.9396, Recall: 0.9106
+Validation accuracy did not improve for 45 epochs.
+
+Epoch 71/250
+train mode | time: 16:13:31
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3153, Accuracy: 0.9983, F1: 0.9980, Precision: 0.9982, Recall: 0.9981
+Train Epoch 71 took 63.63 seconds.
+val mode | time: 16:14:34
+val
+Total Epoch Progress:  28%|██▊       | 71/250 [1:21:55<3:27:03, 69.41s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3829, Accuracy: 0.9266, F1: 0.9375, Precision: 0.9317, Recall: 0.9442
+Validation accuracy did not improve for 46 epochs.
+
+Epoch 72/250
+train mode | time: 16:14:40
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3147, Accuracy: 0.9988, F1: 0.9989, Precision: 0.9985, Recall: 0.9995
+Train Epoch 72 took 63.39 seconds.
+val mode | time: 16:15:44
+val
+Total Epoch Progress:  29%|██▉       | 72/250 [1:23:04<3:25:40, 69.33s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3851, Accuracy: 0.9252, F1: 0.9340, Precision: 0.9634, Recall: 0.9071
+Validation accuracy did not improve for 47 epochs.
+
+Epoch 73/250
+train mode | time: 16:15:50
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3155, Accuracy: 0.9979, F1: 0.9976, Precision: 0.9976, Recall: 0.9976
+Train Epoch 73 took 63.73 seconds.
+val mode | time: 16:16:53
+val
+Total Epoch Progress:  29%|██▉       | 73/250 [1:24:13<3:24:33, 69.34s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3727, Accuracy: 0.9399, F1: 0.9480, Precision: 0.9563, Recall: 0.9404
+Validation accuracy did not improve for 48 epochs.
+
+Epoch 74/250
+train mode | time: 16:16:59
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3151, Accuracy: 0.9983, F1: 0.9977, Precision: 0.9982, Recall: 0.9977
+Train Epoch 74 took 63.74 seconds.
+val mode | time: 16:18:03
+val
+Total Epoch Progress:  30%|██▉       | 74/250 [1:25:23<3:23:46, 69.47s/epoch]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3771, Accuracy: 0.9339, F1: 0.9434, Precision: 0.9395, Recall: 0.9484
+Validation accuracy did not improve for 49 epochs.
+
+Epoch 75/250
+train mode | time: 16:18:09
+train
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3149, Accuracy: 0.9985, F1: 0.9986, Precision: 0.9984, Recall: 0.9988
+Train Epoch 75 took 63.61 seconds.
+val mode | time: 16:19:12
+val
+Total Epoch Progress:  30%|██▉       | 74/250 [1:26:32<3:25:50, 70.17s/epoch]
+/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Loss: 0.3697, Accuracy: 0.9420, F1: 0.9502, Precision: 0.9533, Recall: 0.9477
+Validation accuracy did not improve for 50 epochs.
+Early stopping at epoch 75 due to no improvement in validation accuracy for 50 epochs.
+
+Total training time (train phases only): 4767.13 seconds.
+val mode | time: 16:19:18
+val
+Loss: 0.3696, Accuracy: 0.9420, F1: 0.9500, Precision: 0.9528, Recall: 0.9478
+   train_loss  val_loss  train_accuracy  ...  train_recall  val_recall  train_time
+0    0.510827  0.495617        0.853266  ...      0.890902    0.836157   63.821315
+1    0.389511  0.435756        0.963904  ...      0.975047    0.905187   63.371993
+2    0.362703  0.417458        0.972831  ...      0.979655    0.956275   63.523689
+3    0.348142  0.410880        0.981807  ...      0.986138    0.906340   63.525766
+4    0.340336  0.410774        0.984491  ...      0.987051    0.897660   63.431194
+
+[5 rows x 11 columns]

@@ -1,0 +1,276 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading cuda 11.8 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 10.2.0 
+Lmod: loading openmpi 4.1.2 
+
+The following have been reloaded with a version change:
+  1) gcc/8.5.0 => gcc/10.2.0
+
+Thu Nov  7 00:04:29 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          On  |   00000000:C5:00.0 Off |                    0 |
+| N/A   38C    P0             42W /  250W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+device:cuda
+Transformer Model parameters number: 2580706
+  0%|          | 0/130 [00:00<?, ?it/s]/home/js54mumy/.conda/envs/myenv/lib/python3.9/site-packages/torch/autograd/graph.py:768: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at ../aten/src/ATen/native/transformers/cuda/attention_backward.cu:619.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 0 | Loss: 0.5905402373183858 | Accuracy: 0.6728084415584416 | F1: 0.804405842107817 | Train Time: 30.6569 seconds
+Epoch 0 | Val Loss: 0.8540586154250538 | Val Accuracy: 0.6099391193543819 | Val F1: 0.757716999384399
+  1%|          | 1/130 [00:41<1:28:59, 41.39s/it]Epoch 0 | EarlyStopping Counter: 0
+Epoch 1 | Loss: 0.47059753726829184 | Accuracy: 0.734577922077922 | F1: 0.8299708818635607 | Train Time: 29.6038 seconds
+Epoch 1 | Val Loss: 0.5970562793550448 | Val Accuracy: 0.7506725187597338 | Val F1: 0.8284127448114587
+  2%|▏         | 2/130 [01:21<1:26:49, 40.70s/it]Epoch 1 | EarlyStopping Counter: 0
+Epoch 2 | Loss: 0.20641108946269981 | Accuracy: 0.926948051948052 | F1: 0.9453020542117418 | Train Time: 29.6368 seconds
+Epoch 2 | Val Loss: 0.35848386031133017 | Val Accuracy: 0.8500637123035537 | Val F1: 0.8884911024534063
+  2%|▏         | 3/130 [02:01<1:25:41, 40.48s/it]Epoch 2 | EarlyStopping Counter: 0
+Epoch 3 | Loss: 0.12399824730713259 | Accuracy: 0.95625 | F1: 0.9673471860422851 | Train Time: 29.8028 seconds
+Epoch 3 | Val Loss: 0.2711960663892565 | Val Accuracy: 0.9012459294917174 | Val F1: 0.92362441828634
+  3%|▎         | 4/130 [02:42<1:25:00, 40.48s/it]Epoch 3 | EarlyStopping Counter: 0
+Epoch 4 | Loss: 0.0848086868449078 | Accuracy: 0.9706168831168831 | F1: 0.9780898196344269 | Train Time: 29.7122 seconds
+Epoch 4 | Val Loss: 0.1792662247733057 | Val Accuracy: 0.9382698570012743 | Val F1: 0.9490296937105448
+  4%|▍         | 5/130 [03:22<1:24:11, 40.41s/it]Epoch 4 | EarlyStopping Counter: 0
+Epoch 5 | Loss: 0.062382426999460956 | Accuracy: 0.9806006493506494 | F1: 0.9855388152719792 | Train Time: 29.7898 seconds
+Epoch 5 | Val Loss: 0.2631671358062148 | Val Accuracy: 0.9125725612346028 | Val F1: 0.9322731011790513
+  5%|▍         | 6/130 [04:02<1:23:29, 40.40s/it]Epoch 5 | EarlyStopping Counter: 1
+Epoch 6 | Loss: 0.05263481364228654 | Accuracy: 0.9827922077922078 | F1: 0.9871980676328502 | Train Time: 29.7267 seconds
+Epoch 6 | Val Loss: 0.18658157398426964 | Val Accuracy: 0.9367832365850205 | Val F1: 0.9491602618844293
+  5%|▌         | 7/130 [04:43<1:22:43, 40.36s/it]Epoch 6 | EarlyStopping Counter: 2
+Epoch 7 | Loss: 0.040800432845883604 | Accuracy: 0.9866883116883117 | F1: 0.9901037895244992 | Train Time: 29.7231 seconds
+Epoch 7 | Val Loss: 0.6404030660833169 | Val Accuracy: 0.8128274104488178 | Val F1: 0.8665455279628508
+  6%|▌         | 8/130 [05:23<1:22:01, 40.34s/it]Epoch 7 | EarlyStopping Counter: 3
+Epoch 8 | Loss: 0.034287492030560245 | Accuracy: 0.9899350649350649 | F1: 0.992519305019305 | Train Time: 29.7234 seconds
+Epoch 8 | Val Loss: 0.2187627079144407 | Val Accuracy: 0.9365708622398414 | Val F1: 0.9500501728174824
+  7%|▋         | 9/130 [06:03<1:21:17, 40.31s/it]Epoch 8 | EarlyStopping Counter: 4
+Epoch 9 | Loss: 0.027025126136065305 | Accuracy: 0.9920454545454546 | F1: 0.9940849830999517 | Train Time: 29.7139 seconds
+Epoch 9 | Val Loss: 0.8744592422880738 | Val Accuracy: 0.7887583179951861 | Val F1: 0.8520281662203709
+  8%|▊         | 10/130 [06:44<1:20:34, 40.28s/it]Epoch 9 | EarlyStopping Counter: 5
+Epoch 10 | Loss: 0.02802914916885436 | Accuracy: 0.9914772727272727 | F1: 0.9936659226639319 | Train Time: 29.7501 seconds
+Epoch 10 | Val Loss: 0.7410170727270357 | Val Accuracy: 0.8139600736231063 | Val F1: 0.8673798950343157
+  8%|▊         | 11/130 [07:24<1:19:54, 40.29s/it]Epoch 10 | EarlyStopping Counter: 6
+Epoch 11 | Loss: 0.022593168260918194 | Accuracy: 0.9930194805194805 | F1: 0.9948124019785257 | Train Time: 29.6965 seconds
+Epoch 11 | Val Loss: 1.115380099692226 | Val Accuracy: 0.7542828826277785 | Val F1: 0.832245904016239
+  9%|▉         | 12/130 [08:04<1:19:11, 40.27s/it]Epoch 11 | EarlyStopping Counter: 7
+Epoch 12 | Loss: 0.020745542676334706 | Accuracy: 0.9931818181818182 | F1: 0.9949324324324325 | Train Time: 29.7406 seconds
+Epoch 12 | Val Loss: 0.9045889730232334 | Val Accuracy: 0.7942800509698429 | Val F1: 0.8555091487669053
+ 10%|█         | 13/130 [08:44<1:18:33, 40.29s/it]Epoch 12 | EarlyStopping Counter: 8
+Epoch 13 | Loss: 0.01739718446227595 | Accuracy: 0.9948051948051948 | F1: 0.996140393197443 | Train Time: 29.7064 seconds
+Epoch 13 | Val Loss: 1.0061034827547914 | Val Accuracy: 0.7846524139883903 | Val F1: 0.8497926130752518
+ 11%|█         | 14/130 [09:25<1:17:51, 40.27s/it]Epoch 13 | EarlyStopping Counter: 9
+Epoch 14 | Loss: 0.017847037449491954 | Accuracy: 0.9935064935064936 | F1: 0.9951737451737451 | Train Time: 29.7465 seconds
+Epoch 14 | Val Loss: 0.5086652085074956 | Val Accuracy: 0.8752654679314739 | Val F1: 0.9069890202702703
+ 12%|█▏        | 15/130 [10:05<1:17:12, 40.28s/it]Epoch 14 | EarlyStopping Counter: 10
+Epoch 15 | Loss: 0.019231677283332593 | Accuracy: 0.9936688311688312 | F1: 0.9952926976463489 | Train Time: 29.7114 seconds
+Epoch 15 | Val Loss: 0.48610796056881683 | Val Accuracy: 0.8831941101514937 | Val F1: 0.9123086734693877
+ 12%|█▏        | 16/130 [10:45<1:16:29, 40.26s/it]Epoch 15 | EarlyStopping Counter: 11
+Epoch 16 | Loss: 0.012085715728825526 | Accuracy: 0.9959415584415584 | F1: 0.9969832267406782 | Train Time: 29.7610 seconds
+Epoch 16 | Val Loss: 0.27783327395577356 | Val Accuracy: 0.9312615036103639 | Val F1: 0.946130374479889
+ 13%|█▎        | 17/130 [11:25<1:15:51, 40.28s/it]Epoch 16 | EarlyStopping Counter: 12
+Epoch 17 | Loss: 0.012069037339503442 | Accuracy: 0.9960227272727272 | F1: 0.9970444538271307 | Train Time: 29.7102 seconds
+Epoch 17 | Val Loss: 0.25036839015251955 | Val Accuracy: 0.9400396432111001 | Val F1: 0.9526365822289325
+ 14%|█▍        | 18/130 [12:06<1:15:13, 40.30s/it]Epoch 17 | EarlyStopping Counter: 0
+Epoch 18 | Loss: 0.014060702679919566 | Accuracy: 0.994724025974026 | F1: 0.9960807958999096 | Train Time: 29.8090 seconds
+Epoch 18 | Val Loss: 0.397373537200069 | Val Accuracy: 0.9038652130822596 | Val F1: 0.9265787197231834
+ 15%|█▍        | 19/130 [12:46<1:14:35, 40.32s/it]Epoch 18 | EarlyStopping Counter: 1
+Epoch 19 | Loss: 0.011178893866098724 | Accuracy: 0.9959415584415584 | F1: 0.9969835907335908 | Train Time: 29.7964 seconds
+Epoch 19 | Val Loss: 0.5852696749031948 | Val Accuracy: 0.8640804190853745 | Val F1: 0.8994132439228835
+ 15%|█▌        | 20/130 [13:27<1:13:57, 40.34s/it]Epoch 19 | EarlyStopping Counter: 2
+Epoch 20 | Loss: 0.006955676849866467 | Accuracy: 0.9978084415584415 | F1: 0.9983710407239819 | Train Time: 29.7671 seconds
+Epoch 20 | Val Loss: 0.6357751997415296 | Val Accuracy: 0.8558686110717826 | Val F1: 0.8939914610017703
+ 16%|█▌        | 21/130 [14:07<1:13:16, 40.34s/it]Epoch 20 | EarlyStopping Counter: 3
+Epoch 21 | Loss: 0.006872364243000364 | Accuracy: 0.9978896103896104 | F1: 0.998431845597105 | Train Time: 29.7757 seconds
+Epoch 21 | Val Loss: 0.2182550555674618 | Val Accuracy: 0.9487469913634433 | Val F1: 0.9590682948891904
+ 17%|█▋        | 22/130 [14:47<1:12:38, 40.36s/it]Epoch 21 | EarlyStopping Counter: 0
+Epoch 22 | Loss: 0.008930712619206003 | Accuracy: 0.9970779220779221 | F1: 0.997828447339848 | Train Time: 29.7261 seconds
+Epoch 22 | Val Loss: 0.2234353587900759 | Val Accuracy: 0.9483930341214781 | Val F1: 0.9588855676498788
+ 18%|█▊        | 23/130 [15:27<1:11:53, 40.31s/it]Epoch 22 | EarlyStopping Counter: 1
+Epoch 23 | Loss: 0.006907999527751387 | Accuracy: 0.9978896103896104 | F1: 0.9984314671814671 | Train Time: 29.7487 seconds
+Epoch 23 | Val Loss: 0.3687898070128462 | Val Accuracy: 0.9171032139317571 | Val F1: 0.9359374145193938
+ 18%|█▊        | 24/130 [16:08<1:11:13, 40.31s/it]Epoch 23 | EarlyStopping Counter: 2
+Epoch 24 | Loss: 0.005402233654764698 | Accuracy: 0.9983766233766234 | F1: 0.9987929993964997 | Train Time: 29.6630 seconds
+Epoch 24 | Val Loss: 0.3624220513616877 | Val Accuracy: 0.9185898343480108 | Val F1: 0.9368894742618813
+ 19%|█▉        | 25/130 [16:48<1:10:27, 40.27s/it]Epoch 24 | EarlyStopping Counter: 3
+Epoch 25 | Loss: 0.006215539363251815 | Accuracy: 0.9986201298701298 | F1: 0.9989746064298208 | Train Time: 29.6804 seconds
+Epoch 25 | Val Loss: 0.25241332709232484 | Val Accuracy: 0.9410307234886026 | Val F1: 0.9534610872115761
+ 20%|██        | 26/130 [17:28<1:09:44, 40.24s/it]Epoch 25 | EarlyStopping Counter: 4
+Epoch 26 | Loss: 0.002450752503349364 | Accuracy: 0.9995941558441559 | F1: 0.999698377269711 | Train Time: 29.6572 seconds
+Epoch 26 | Val Loss: 0.22364384154016945 | Val Accuracy: 0.9510831091604134 | Val F1: 0.9609758852431242
+ 21%|██        | 27/130 [18:08<1:09:03, 40.23s/it]Epoch 26 | EarlyStopping Counter: 0
+Epoch 27 | Loss: 0.005801294867313874 | Accuracy: 0.9982954545454545 | F1: 0.9987333373544846 | Train Time: 29.7544 seconds
+Epoch 27 | Val Loss: 0.5365232685001406 | Val Accuracy: 0.8771768370380858 | Val F1: 0.9081962008571882
+ 22%|██▏       | 28/130 [18:49<1:08:24, 40.24s/it]Epoch 27 | EarlyStopping Counter: 1
+Epoch 28 | Loss: 0.010739496581663843 | Accuracy: 0.9963474025974026 | F1: 0.997285722902467 | Train Time: 29.6305 seconds
+Epoch 28 | Val Loss: 0.33793685913857124 | Val Accuracy: 0.9207843692481948 | Val F1: 0.9387755102040817
+ 22%|██▏       | 29/130 [19:29<1:07:40, 40.20s/it]Epoch 28 | EarlyStopping Counter: 2
+Epoch 29 | Loss: 0.006432704974274686 | Accuracy: 0.997564935064935 | F1: 0.9981901544401545 | Train Time: 29.6474 seconds
+Epoch 29 | Val Loss: 0.27532542659634407 | Val Accuracy: 0.937845108310916 | Val F1: 0.9512655417406749
+ 23%|██▎       | 30/130 [20:09<1:06:59, 40.20s/it]Epoch 29 | EarlyStopping Counter: 3
+Epoch 30 | Loss: 0.005552519547200064 | Accuracy: 0.9983766233766234 | F1: 0.9987935818554711 | Train Time: 29.5946 seconds
+Epoch 30 | Val Loss: 0.2399272778700389 | Val Accuracy: 0.9447826702534334 | Val F1: 0.9563611950318899
+ 24%|██▍       | 31/130 [20:49<1:06:15, 40.16s/it]Epoch 30 | EarlyStopping Counter: 4
+Epoch 31 | Loss: 0.001678875054570305 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.5912 seconds
+Epoch 31 | Val Loss: 0.24925949925438454 | Val Accuracy: 0.9451366274953985 | Val F1: 0.9566190876014553
+ 25%|██▍       | 32/130 [21:29<1:05:32, 40.13s/it]Epoch 31 | EarlyStopping Counter: 5
+Epoch 32 | Loss: 0.0010098332799434384 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.5876 seconds
+Epoch 32 | Val Loss: 0.2317168782994066 | Val Accuracy: 0.9464108735664731 | Val F1: 0.957617154694586
+ 25%|██▌       | 33/130 [22:09<1:04:49, 40.10s/it]Epoch 32 | EarlyStopping Counter: 6
+Epoch 33 | Loss: 0.009041428706645942 | Accuracy: 0.9973214285714286 | F1: 0.9980095301284758 | Train Time: 29.5632 seconds
+Epoch 33 | Val Loss: 0.6815337918349015 | Val Accuracy: 0.8460285997451508 | Val F1: 0.8876607613243117
+ 26%|██▌       | 34/130 [22:49<1:04:07, 40.08s/it]Epoch 33 | EarlyStopping Counter: 7
+Epoch 34 | Loss: 0.008952450232169071 | Accuracy: 0.9965909090909091 | F1: 0.997467133035822 | Train Time: 29.5490 seconds
+Epoch 34 | Val Loss: 0.2520261306781322 | Val Accuracy: 0.9393317287271697 | Val F1: 0.9522429646140986
+ 27%|██▋       | 35/130 [23:29<1:03:24, 40.05s/it]Epoch 34 | EarlyStopping Counter: 8
+Epoch 35 | Loss: 0.003973691734049148 | Accuracy: 0.9989448051948052 | F1: 0.9992156862745099 | Train Time: 29.6155 seconds
+Epoch 35 | Val Loss: 0.24807966748706584 | Val Accuracy: 0.9442871301146821 | Val F1: 0.9560359756438188
+ 28%|██▊       | 36/130 [24:09<1:02:47, 40.08s/it]Epoch 35 | EarlyStopping Counter: 9
+Epoch 36 | Loss: 0.006782818483118824 | Accuracy: 0.9984577922077922 | F1: 0.9988539718921527 | Train Time: 29.5603 seconds
+Epoch 36 | Val Loss: 0.26465986981969253 | Val Accuracy: 0.9387653971400255 | Val F1: 0.9516300397025108
+ 28%|██▊       | 37/130 [24:49<1:02:05, 40.06s/it]Epoch 36 | EarlyStopping Counter: 10
+Epoch 37 | Loss: 0.006164828136705229 | Accuracy: 0.9979707792207793 | F1: 0.9984918863485552 | Train Time: 29.6958 seconds
+Epoch 37 | Val Loss: 0.6119514083430778 | Val Accuracy: 0.8616735098400113 | Val F1: 0.8979101358411703
+ 29%|██▉       | 38/130 [25:29<1:01:29, 40.10s/it]Epoch 37 | EarlyStopping Counter: 11
+Epoch 38 | Loss: 0.004765961789962603 | Accuracy: 0.9987012987012988 | F1: 0.999034749034749 | Train Time: 29.5644 seconds
+Epoch 38 | Val Loss: 0.18744628074726863 | Val Accuracy: 0.9574543395157865 | Val F1: 0.965776436421616
+ 30%|███       | 39/130 [26:10<1:00:50, 40.12s/it]Epoch 38 | EarlyStopping Counter: 0
+Epoch 39 | Loss: 0.0034414160092755873 | Accuracy: 0.9988636363636364 | F1: 0.9991554054054054 | Train Time: 29.6774 seconds
+Epoch 39 | Val Loss: 0.3099704878562766 | Val Accuracy: 0.9325357496814385 | Val F1: 0.9472927382335048
+ 31%|███       | 40/130 [26:50<1:00:13, 40.15s/it]Epoch 39 | EarlyStopping Counter: 1
+Epoch 40 | Loss: 0.0012975626832721664 | Accuracy: 0.9997564935064935 | F1: 0.9998190263618266 | Train Time: 29.6377 seconds
+Epoch 40 | Val Loss: 0.2927602874740644 | Val Accuracy: 0.9322525838878664 | Val F1: 0.9470129007253197
+ 32%|███▏      | 41/130 [27:30<59:32, 40.14s/it]  Epoch 40 | EarlyStopping Counter: 2
+Epoch 41 | Loss: 0.006178901036556843 | Accuracy: 0.9978896103896104 | F1: 0.9984312779051526 | Train Time: 29.6790 seconds
+Epoch 41 | Val Loss: 0.663054832927377 | Val Accuracy: 0.8468780971258671 | Val F1: 0.8882112770685824
+ 32%|███▏      | 42/130 [28:10<58:54, 40.17s/it]Epoch 41 | EarlyStopping Counter: 3
+Epoch 42 | Loss: 0.00482835332243537 | Accuracy: 0.9986201298701298 | F1: 0.9989743589743589 | Train Time: 29.6325 seconds
+Epoch 42 | Val Loss: 0.2344610432897522 | Val Accuracy: 0.9473311623955826 | Val F1: 0.9582022471910112
+ 33%|███▎      | 43/130 [28:50<58:13, 40.15s/it]Epoch 42 | EarlyStopping Counter: 4
+Epoch 43 | Loss: 0.0010390312174280694 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6121 seconds
+Epoch 43 | Val Loss: 0.24385167389892265 | Val Accuracy: 0.9422341781112842 | Val F1: 0.9543624161073826
+ 34%|███▍      | 44/130 [29:30<57:31, 40.13s/it]Epoch 43 | EarlyStopping Counter: 5
+Epoch 44 | Loss: 0.006828076231726914 | Accuracy: 0.9974025974025974 | F1: 0.9980701965987215 | Train Time: 29.6515 seconds
+Epoch 44 | Val Loss: 0.3365640168319766 | Val Accuracy: 0.9200056633158714 | Val F1: 0.9381499726327313
+ 35%|███▍      | 45/130 [30:10<56:51, 40.13s/it]Epoch 44 | EarlyStopping Counter: 6
+Epoch 45 | Loss: 0.0066824791637266675 | Accuracy: 0.9976461038961039 | F1: 0.9982497434968918 | Train Time: 29.6081 seconds
+Epoch 45 | Val Loss: 0.2716281227878747 | Val Accuracy: 0.9368540280334136 | Val F1: 0.9504444444444444
+ 35%|███▌      | 46/130 [30:51<56:09, 40.12s/it]Epoch 45 | EarlyStopping Counter: 7
+Epoch 46 | Loss: 0.004359919098738805 | Accuracy: 0.9988636363636364 | F1: 0.9991556091676719 | Train Time: 29.6418 seconds
+Epoch 46 | Val Loss: 0.4353740969067018 | Val Accuracy: 0.8960781537590259 | Val F1: 0.9211261551687083
+ 36%|███▌      | 47/130 [31:31<55:29, 40.12s/it]Epoch 46 | EarlyStopping Counter: 8
+Epoch 47 | Loss: 0.0017128708629865902 | Accuracy: 0.9997564935064935 | F1: 0.9998190263618266 | Train Time: 29.6043 seconds
+Epoch 47 | Val Loss: 0.1914568987494396 | Val Accuracy: 0.9587993770352542 | Val F1: 0.9669993195735994
+ 37%|███▋      | 48/130 [32:11<54:53, 40.16s/it]Epoch 47 | EarlyStopping Counter: 0
+Epoch 48 | Loss: 0.0010840407836511005 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6829 seconds
+Epoch 48 | Val Loss: 0.28036464381325893 | Val Accuracy: 0.9352966161687668 | Val F1: 0.9493965230871443
+ 38%|███▊      | 49/130 [32:51<54:13, 40.16s/it]Epoch 48 | EarlyStopping Counter: 1
+Epoch 49 | Loss: 0.0009144955838375797 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6627 seconds
+Epoch 49 | Val Loss: 0.26937630025527576 | Val Accuracy: 0.9377035254141299 | Val F1: 0.9511219728949123
+ 38%|███▊      | 50/130 [33:31<53:33, 40.17s/it]Epoch 49 | EarlyStopping Counter: 2
+Epoch 50 | Loss: 0.000740406002211324 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6172 seconds
+Epoch 50 | Val Loss: 0.2399760352682896 | Val Accuracy: 0.9425173439048563 | Val F1: 0.9547279214986619
+ 39%|███▉      | 51/130 [34:11<52:51, 40.15s/it]Epoch 50 | EarlyStopping Counter: 3
+Epoch 51 | Loss: 0.012660834020477654 | Accuracy: 0.9961038961038962 | F1: 0.9971049457177322 | Train Time: 29.6702 seconds
+Epoch 51 | Val Loss: 0.25037828302203824 | Val Accuracy: 0.9408183491434234 | Val F1: 0.9533846325415412
+ 40%|████      | 52/130 [34:52<52:12, 40.16s/it]Epoch 51 | EarlyStopping Counter: 4
+Epoch 52 | Loss: 0.0010728831864508283 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.6191 seconds
+Epoch 52 | Val Loss: 0.2826704686375957 | Val Accuracy: 0.9354381990655529 | Val F1: 0.9494120257377413
+ 41%|████      | 53/130 [35:32<51:30, 40.14s/it]Epoch 52 | EarlyStopping Counter: 5
+Epoch 53 | Loss: 0.0014131364052729339 | Accuracy: 0.9999188311688312 | F1: 0.9999396754539422 | Train Time: 29.6794 seconds
+Epoch 53 | Val Loss: 0.3571595833160097 | Val Accuracy: 0.9207843692481948 | Val F1: 0.938728576904123
+ 42%|████▏     | 54/130 [36:12<50:52, 40.16s/it]Epoch 53 | EarlyStopping Counter: 6
+Epoch 54 | Loss: 0.001580498079023197 | Accuracy: 0.999512987012987 | F1: 0.9996380745566413 | Train Time: 29.6705 seconds
+Epoch 54 | Val Loss: 0.22333865056817678 | Val Accuracy: 0.9488177828118364 | Val F1: 0.9593386198751477
+ 42%|████▏     | 55/130 [36:52<50:12, 40.17s/it]Epoch 54 | EarlyStopping Counter: 7
+Epoch 55 | Loss: 0.005163991261266441 | Accuracy: 0.9988636363636364 | F1: 0.9991557110119407 | Train Time: 29.6818 seconds
+Epoch 55 | Val Loss: 0.2889583471065363 | Val Accuracy: 0.9309783378167917 | Val F1: 0.9461712582123337
+ 43%|████▎     | 56/130 [37:32<49:33, 40.18s/it]Epoch 55 | EarlyStopping Counter: 8
+Epoch 56 | Loss: 0.003589037888784108 | Accuracy: 0.9991883116883117 | F1: 0.9993968636911942 | Train Time: 29.6685 seconds
+Epoch 56 | Val Loss: 0.44019573102536613 | Val Accuracy: 0.8966444853461701 | Val F1: 0.9215222532788647
+ 44%|████▍     | 57/130 [38:12<48:53, 40.19s/it]Epoch 56 | EarlyStopping Counter: 9
+Epoch 57 | Loss: 0.00378121716008985 | Accuracy: 0.999025974025974 | F1: 0.9992761491132827 | Train Time: 29.6556 seconds
+Epoch 57 | Val Loss: 0.8307506286315789 | Val Accuracy: 0.8267025343338524 | Val F1: 0.8754578754578755
+ 45%|████▍     | 58/130 [38:53<48:13, 40.18s/it]Epoch 57 | EarlyStopping Counter: 10
+Epoch 58 | Loss: 0.007106914140679798 | Accuracy: 0.9978896103896104 | F1: 0.9984312779051526 | Train Time: 29.7123 seconds
+Epoch 58 | Val Loss: 0.26209495902115193 | Val Accuracy: 0.9415262636273538 | Val F1: 0.953901105034044
+ 45%|████▌     | 59/130 [39:33<47:33, 40.20s/it]Epoch 58 | EarlyStopping Counter: 11
+Epoch 59 | Loss: 0.006096775016788803 | Accuracy: 0.9982142857142857 | F1: 0.9986731001206273 | Train Time: 29.6898 seconds
+Epoch 59 | Val Loss: 0.26299299597464937 | Val Accuracy: 0.9386238142432394 | Val F1: 0.9516964733411332
+ 46%|████▌     | 60/130 [40:13<46:53, 40.20s/it]Epoch 59 | EarlyStopping Counter: 12
+Epoch 60 | Loss: 0.0013940206088260642 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.7000 seconds
+Epoch 60 | Val Loss: 0.24650265164132076 | Val Accuracy: 0.9431544669403936 | Val F1: 0.9551371585004749
+ 47%|████▋     | 61/130 [40:53<46:14, 40.21s/it]Epoch 60 | EarlyStopping Counter: 13
+Epoch 61 | Loss: 0.0010536311152534764 | Accuracy: 0.9996753246753247 | F1: 0.9997587163710943 | Train Time: 29.7027 seconds
+Epoch 61 | Val Loss: 0.315959390627491 | Val Accuracy: 0.9280050969842844 | Val F1: 0.9439885443630556
+ 48%|████▊     | 62/130 [41:34<45:34, 40.21s/it]Epoch 61 | EarlyStopping Counter: 14
+Epoch 62 | Loss: 0.0006522198320595493 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7041 seconds
+Epoch 62 | Val Loss: 0.23889634469503615 | Val Accuracy: 0.9418094294209259 | Val F1: 0.9541345831938399
+ 48%|████▊     | 63/130 [42:14<44:54, 40.22s/it]Epoch 62 | EarlyStopping Counter: 15
+Epoch 63 | Loss: 0.0007641647258140722 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7035 seconds
+Epoch 63 | Val Loss: 0.2199853326814782 | Val Accuracy: 0.9456321676341498 | Val F1: 0.9569796101277168
+ 49%|████▉     | 64/130 [42:54<44:14, 40.23s/it]Epoch 63 | EarlyStopping Counter: 16
+Epoch 64 | Loss: 0.0006069329935492639 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7134 seconds
+Epoch 64 | Val Loss: 0.21708571740768653 | Val Accuracy: 0.9464108735664731 | Val F1: 0.9576313874741142
+ 50%|█████     | 65/130 [43:34<43:35, 40.23s/it]Epoch 64 | EarlyStopping Counter: 17
+Epoch 65 | Loss: 0.011539991232343533 | Accuracy: 0.9964285714285714 | F1: 0.9973455598455598 | Train Time: 29.7018 seconds
+Epoch 65 | Val Loss: 0.22824482220671208 | Val Accuracy: 0.9432960498371796 | Val F1: 0.9552288860320832
+ 51%|█████     | 66/130 [44:15<42:54, 40.23s/it]Epoch 65 | EarlyStopping Counter: 18
+Epoch 66 | Loss: 0.001033366278838971 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6968 seconds
+Epoch 66 | Val Loss: 0.24928642131135142 | Val Accuracy: 0.9406059747982444 | Val F1: 0.9531990851787806
+ 52%|█████▏    | 67/130 [44:55<42:14, 40.23s/it]Epoch 66 | EarlyStopping Counter: 19
+Epoch 67 | Loss: 0.001142613923380472 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6958 seconds
+Epoch 67 | Val Loss: 0.2322266071749921 | Val Accuracy: 0.9461984992212941 | Val F1: 0.9574181981174361
+ 52%|█████▏    | 68/130 [45:35<41:34, 40.23s/it]Epoch 67 | EarlyStopping Counter: 20
+Epoch 68 | Loss: 0.0005590653617892039 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7032 seconds
+Epoch 68 | Val Loss: 0.2210356820248896 | Val Accuracy: 0.9471187880504035 | Val F1: 0.958139534883721
+ 53%|█████▎    | 69/130 [46:15<40:54, 40.23s/it]Epoch 68 | EarlyStopping Counter: 21
+Epoch 69 | Loss: 0.0007051488277165963 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7078 seconds
+Epoch 69 | Val Loss: 0.24452353949805805 | Val Accuracy: 0.9407475576950305 | Val F1: 0.9534042197851138
+ 54%|█████▍    | 70/130 [46:55<40:13, 40.23s/it]Epoch 69 | EarlyStopping Counter: 22
+Epoch 70 | Loss: 0.0007518169637667409 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7078 seconds
+Epoch 70 | Val Loss: 0.17428731016188648 | Val Accuracy: 0.9569587993770352 | Val F1: 0.9655015887426237
+ 55%|█████▍    | 71/130 [47:36<39:33, 40.23s/it]Epoch 70 | EarlyStopping Counter: 23
+Epoch 71 | Loss: 0.01920331229632282 | Accuracy: 0.9939935064935065 | F1: 0.9955357142857143 | Train Time: 29.6921 seconds
+Epoch 71 | Val Loss: 0.20329593784888 | Val Accuracy: 0.9464108735664731 | Val F1: 0.9574695207595932
+ 55%|█████▌    | 72/130 [48:16<38:53, 40.23s/it]Epoch 71 | EarlyStopping Counter: 24
+Epoch 72 | Loss: 0.0022694284955868133 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.6827 seconds
+Epoch 72 | Val Loss: 0.23349515949996194 | Val Accuracy: 0.9457737505309358 | Val F1: 0.9571732080957174
+ 56%|█████▌    | 73/130 [48:56<38:12, 40.22s/it]Epoch 72 | EarlyStopping Counter: 25
+Epoch 73 | Loss: 0.001359193995893576 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.6921 seconds
+Epoch 73 | Val Loss: 0.19432845684062722 | Val Accuracy: 0.9539855585445278 | Val F1: 0.9632602306127063
+ 57%|█████▋    | 74/130 [49:36<37:32, 40.22s/it]Epoch 73 | EarlyStopping Counter: 26
+Epoch 74 | Loss: 0.0009731037731304335 | Accuracy: 0.9998376623376624 | F1: 0.9998793581855471 | Train Time: 29.6881 seconds
+Epoch 74 | Val Loss: 0.24496510067030317 | Val Accuracy: 0.9415970550757469 | Val F1: 0.9539851637012661
+ 58%|█████▊    | 75/130 [50:17<36:52, 40.22s/it]Epoch 74 | EarlyStopping Counter: 27
+Epoch 75 | Loss: 0.0006504570092407189 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7052 seconds
+Epoch 75 | Val Loss: 0.2271365760869691 | Val Accuracy: 0.9443579215630752 | Val F1: 0.9560599284436494
+ 58%|█████▊    | 76/130 [50:57<36:12, 40.22s/it]Epoch 75 | EarlyStopping Counter: 28
+Epoch 76 | Loss: 0.0006321124431156317 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.6998 seconds
+Epoch 76 | Val Loss: 0.20566040530825971 | Val Accuracy: 0.9492425315021945 | Val F1: 0.9597846205620058
+ 59%|█████▉    | 77/130 [51:37<35:31, 40.23s/it]Epoch 76 | EarlyStopping Counter: 29
+Epoch 77 | Loss: 0.0006453898694523453 | Accuracy: 1.0 | F1: 1.0 | Train Time: 29.7080 seconds
+Epoch 77 | Val Loss: 0.23698893387336284 | Val Accuracy: 0.941880220869319 | Val F1: 0.9542490944552801
+ 59%|█████▉    | 77/130 [52:17<35:59, 40.75s/it]
+Early stopping triggered after 30 epochs with no improvement.
+Epoch 77 | EarlyStopping Counter: 30
+Stopping early at epoch 77 due to no improvement.
+Total training time (including validation): 3207.1852 seconds
+Accumulated total training time (train_step only): 2316.2488 seconds
+epoch130, lr:0.0001, batch_size:32, lr:0.0001, step_size:25, gamma:0.8
